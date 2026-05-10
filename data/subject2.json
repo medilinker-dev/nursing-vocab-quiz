@@ -1,0 +1,1130 @@
+{
+  "subjectId": "subject2",
+  "subjectName": "신경계통",
+  "version": "2026-05-10",
+  "words": [
+    {
+      "id": "s2-0001",
+      "en": "neuron",
+      "ko": "신경세포",
+      "alt_en": [
+        "nerve cells"
+      ],
+      "alt_ko": [
+        "신경원"
+      ]
+    },
+    {
+      "id": "s2-0002",
+      "en": "dendrite",
+      "ko": "가지돌기",
+      "alt_ko": [
+        "수상돌기"
+      ]
+    },
+    {
+      "id": "s2-0003",
+      "en": "cell body",
+      "ko": "세포체"
+    },
+    {
+      "id": "s2-0004",
+      "en": "axon",
+      "ko": "축삭"
+    },
+    {
+      "id": "s2-0005",
+      "en": "myeline sheath",
+      "ko": "말이집",
+      "alt_en": [
+        "medullary sheath",
+        "myelin"
+      ],
+      "alt_ko": [
+        "수초"
+      ]
+    },
+    {
+      "id": "s2-0006",
+      "en": "Nissl body",
+      "ko": "니슬소체",
+      "alt_en": [
+        "tigroid body"
+      ]
+    },
+    {
+      "id": "s2-0007",
+      "en": "neuroglial cell",
+      "ko": "신경(아)교세포"
+    },
+    {
+      "id": "s2-0008",
+      "en": "astrocyte",
+      "ko": "별아교세포"
+    },
+    {
+      "id": "s2-0009",
+      "en": "oligodendroglia",
+      "ko": "희소돌기아교세포"
+    },
+    {
+      "id": "s2-0010",
+      "en": "microgliocyte",
+      "ko": "미세(아)교세포"
+    },
+    {
+      "id": "s2-0011",
+      "en": "ependymocyte",
+      "ko": "뇌실막세포"
+    },
+    {
+      "id": "s2-0012",
+      "en": "synapse",
+      "ko": "연접",
+      "alt_ko": [
+        "시냅스"
+      ]
+    },
+    {
+      "id": "s2-0013",
+      "en": "nerve fiber",
+      "ko": "신경섬유"
+    },
+    {
+      "id": "s2-0014",
+      "en": "Afferent neuron",
+      "ko": "들신경",
+      "alt_ko": [
+        "구심신경"
+      ]
+    },
+    {
+      "id": "s2-0015",
+      "en": "efferent neuron",
+      "ko": "날신경",
+      "alt_ko": [
+        "원심신경"
+      ]
+    },
+    {
+      "id": "s2-0016",
+      "en": "ganglia",
+      "ko": "신경절",
+      "alt_ko": [
+        "결절종"
+      ]
+    },
+    {
+      "id": "s2-0017",
+      "en": "neurilemmal sheath",
+      "ko": "신경집",
+      "alt_ko": [
+        "신경초"
+      ]
+    },
+    {
+      "id": "s2-0018",
+      "en": "cerebrum",
+      "ko": "대뇌"
+    },
+    {
+      "id": "s2-0019",
+      "en": "cerebral hemisphere",
+      "ko": "대뇌반구"
+    },
+    {
+      "id": "s2-0020",
+      "en": "diencephalon",
+      "ko": "사이뇌",
+      "alt_ko": [
+        "간뇌"
+      ]
+    },
+    {
+      "id": "s2-0021",
+      "en": "brain stem",
+      "ko": "뇌줄기",
+      "alt_ko": [
+        "뇌간"
+      ]
+    },
+    {
+      "id": "s2-0022",
+      "en": "cerebellum",
+      "ko": "소뇌"
+    },
+    {
+      "id": "s2-0023",
+      "en": "midbrain",
+      "ko": "중간뇌",
+      "alt_ko": [
+        "중뇌"
+      ]
+    },
+    {
+      "id": "s2-0024",
+      "en": "pons",
+      "ko": "다리뇌",
+      "alt_ko": [
+        "교뇌"
+      ]
+    },
+    {
+      "id": "s2-0025",
+      "en": "medulla oblongata",
+      "ko": "숨뇌",
+      "alt_ko": [
+        "연수"
+      ]
+    },
+    {
+      "id": "s2-0026",
+      "en": "thalamus",
+      "ko": "시상"
+    },
+    {
+      "id": "s2-0027",
+      "en": "hypothalamus",
+      "ko": "시상하부"
+    },
+    {
+      "id": "s2-0028",
+      "en": "epithalamus",
+      "ko": "시상상부"
+    },
+    {
+      "id": "s2-0029",
+      "en": "cerebral cortex",
+      "ko": "대뇌피질",
+      "alt_ko": [
+        "대뇌겉질"
+      ]
+    },
+    {
+      "id": "s2-0030",
+      "en": "gyrus",
+      "ko": "뇌이랑",
+      "alt_ko": [
+        "회",
+        "이랑"
+      ]
+    },
+    {
+      "id": "s2-0031",
+      "en": "sulcus",
+      "ko": "뇌고랑",
+      "alt_ko": [
+        "구",
+        "홈",
+        "열구"
+      ]
+    },
+    {
+      "id": "s2-0032",
+      "en": "frontal lobe",
+      "ko": "전두엽",
+      "alt_ko": [
+        "이마엽"
+      ]
+    },
+    {
+      "id": "s2-0033",
+      "en": "parietal lobe",
+      "ko": "두정엽",
+      "alt_ko": [
+        "마루엽"
+      ]
+    },
+    {
+      "id": "s2-0034",
+      "en": "temporal lobe",
+      "ko": "측두엽",
+      "alt_ko": [
+        "관자엽"
+      ]
+    },
+    {
+      "id": "s2-0035",
+      "en": "occipital lobe",
+      "ko": "후두엽",
+      "alt_ko": [
+        "뒤통수엽"
+      ]
+    },
+    {
+      "id": "s2-0036",
+      "en": "meninges",
+      "ko": "수막"
+    },
+    {
+      "id": "s2-0037",
+      "en": "dura mater",
+      "ko": "경막"
+    },
+    {
+      "id": "s2-0038",
+      "en": "arachnoid mater",
+      "ko": "거미막",
+      "alt_ko": [
+        "지주막"
+      ]
+    },
+    {
+      "id": "s2-0039",
+      "en": "pia mater",
+      "ko": "연막"
+    },
+    {
+      "id": "s2-0040",
+      "en": "ventricle",
+      "ko": "뇌실"
+    },
+    {
+      "id": "s2-0041",
+      "en": "basal ganglia",
+      "ko": "바닥핵",
+      "alt_ko": [
+        "기저핵"
+      ]
+    },
+    {
+      "id": "s2-0042",
+      "en": "cerebrospinal fluid",
+      "ko": "뇌척수액",
+      "alt_en": [
+        "CSF"
+      ]
+    },
+    {
+      "id": "s2-0043",
+      "en": "gray matter",
+      "ko": "회색질"
+    },
+    {
+      "id": "s2-0044",
+      "en": "white matter",
+      "ko": "백질"
+    },
+    {
+      "id": "s2-0045",
+      "en": "olfactory nerve",
+      "ko": "후각신경"
+    },
+    {
+      "id": "s2-0046",
+      "en": "optic nerve",
+      "ko": "시(각)신경"
+    },
+    {
+      "id": "s2-0047",
+      "en": "oculomotor nerve",
+      "ko": "눈돌림신경",
+      "alt_ko": [
+        "동안신경"
+      ]
+    },
+    {
+      "id": "s2-0048",
+      "en": "trochlear nerve",
+      "ko": "도르래신경",
+      "alt_ko": [
+        "활차신경"
+      ]
+    },
+    {
+      "id": "s2-0049",
+      "en": "trigeminal nerve",
+      "ko": "삼차신경"
+    },
+    {
+      "id": "s2-0050",
+      "en": "abducent nerve",
+      "ko": "외전신경"
+    },
+    {
+      "id": "s2-0051",
+      "en": "facial nerve",
+      "ko": "얼굴신경"
+    },
+    {
+      "id": "s2-0052",
+      "en": "auditory nerve",
+      "ko": "속귀신경"
+    },
+    {
+      "id": "s2-0053",
+      "en": "glossopharyngeal nerve",
+      "ko": "혀인두신경"
+    },
+    {
+      "id": "s2-0054",
+      "en": "vagus nerve",
+      "ko": "미주신경"
+    },
+    {
+      "id": "s2-0055",
+      "en": "accessory nerve",
+      "ko": "더부신경",
+      "alt_ko": [
+        "부신경"
+      ]
+    },
+    {
+      "id": "s2-0056",
+      "en": "hypoglossal nerve",
+      "ko": "혀밑신경",
+      "alt_ko": [
+        "설하신경"
+      ]
+    },
+    {
+      "id": "s2-0057",
+      "en": "cervical nerve",
+      "ko": "목신경",
+      "alt_ko": [
+        "경신경(8쌍)"
+      ]
+    },
+    {
+      "id": "s2-0058",
+      "en": "thoracic nerve",
+      "ko": "가슴신경",
+      "alt_ko": [
+        "흉신경(12쌍)"
+      ]
+    },
+    {
+      "id": "s2-0059",
+      "en": "lumbar nerve",
+      "ko": "허리신경",
+      "alt_ko": [
+        "요추신경(5쌍)"
+      ]
+    },
+    {
+      "id": "s2-0060",
+      "en": "sacral nerve",
+      "ko": "엉치신경",
+      "alt_ko": [
+        "천골신경(5쌍)"
+      ]
+    },
+    {
+      "id": "s2-0061",
+      "en": "coccygeal nerve",
+      "ko": "꼬리신경",
+      "alt_ko": [
+        "미골신경(1쌍)"
+      ]
+    },
+    {
+      "id": "s2-0062",
+      "en": "sympathetic nerve",
+      "ko": "교감신경"
+    },
+    {
+      "id": "s2-0063",
+      "en": "parasympathetic nerve",
+      "ko": "부교감신경"
+    },
+    {
+      "id": "s2-0064",
+      "en": "aphasia",
+      "ko": "실어증",
+      "alt_ko": [
+        "언어상실증"
+      ]
+    },
+    {
+      "id": "s2-0065",
+      "en": "dysarthria",
+      "ko": "조음장애",
+      "alt_ko": [
+        "구음장애"
+      ]
+    },
+    {
+      "id": "s2-0066",
+      "en": "agnosia",
+      "ko": "실인증",
+      "alt_ko": [
+        "인지불능증"
+      ]
+    },
+    {
+      "id": "s2-0067",
+      "en": "amnesia",
+      "ko": "기억상실"
+    },
+    {
+      "id": "s2-0068",
+      "en": "asthenia",
+      "ko": "무력증"
+    },
+    {
+      "id": "s2-0069",
+      "en": "aura",
+      "ko": "조짐",
+      "alt_ko": [
+        "전조"
+      ]
+    },
+    {
+      "id": "s2-0070",
+      "en": "ataxia",
+      "ko": "실조(증)"
+    },
+    {
+      "id": "s2-0071",
+      "en": "apraxia",
+      "ko": "실행증",
+      "alt_ko": [
+        "행위상실증"
+      ]
+    },
+    {
+      "id": "s2-0072",
+      "en": "hemiparesis",
+      "ko": "반신불완전마비"
+    },
+    {
+      "id": "s2-0073",
+      "en": "hemiplegia",
+      "ko": "반신(완전)마비",
+      "alt_ko": [
+        "편마비"
+      ]
+    },
+    {
+      "id": "s2-0074",
+      "en": "paraplegia",
+      "ko": "하반신마비"
+    },
+    {
+      "id": "s2-0075",
+      "en": "tetraplegia",
+      "ko": "사지마비",
+      "alt_en": [
+        "quadriplegia"
+      ],
+      "alt_ko": [
+        "팔다리마비"
+      ]
+    },
+    {
+      "id": "s2-0076",
+      "en": "drowsy",
+      "ko": "졸음증",
+      "alt_en": [
+        "lethargy",
+        "somnolence"
+      ],
+      "alt_ko": [
+        "기면"
+      ]
+    },
+    {
+      "id": "s2-0077",
+      "en": "stupor",
+      "ko": "혼미"
+    },
+    {
+      "id": "s2-0078",
+      "en": "semicoma",
+      "ko": "반혼수"
+    },
+    {
+      "id": "s2-0079",
+      "en": "coma",
+      "ko": "혼수"
+    },
+    {
+      "id": "s2-0080",
+      "en": "syncope",
+      "ko": "실신"
+    },
+    {
+      "id": "s2-0081",
+      "en": "convulsion",
+      "ko": "경련"
+    },
+    {
+      "id": "s2-0082",
+      "en": "seizure",
+      "ko": "발작"
+    },
+    {
+      "id": "s2-0083",
+      "en": "tremor",
+      "ko": "떨림"
+    },
+    {
+      "id": "s2-0084",
+      "en": "tic",
+      "ko": "틱"
+    },
+    {
+      "id": "s2-0085",
+      "en": "sciatica",
+      "ko": "좌골신경통",
+      "alt_en": [
+        "sciatic neuralgia"
+      ]
+    },
+    {
+      "id": "s2-0086",
+      "en": "migraine",
+      "ko": "편두통"
+    },
+    {
+      "id": "s2-0087",
+      "en": "causalgia",
+      "ko": "작열통"
+    },
+    {
+      "id": "s2-0088",
+      "en": "complex regional pain syndrome",
+      "ko": "복합부위통증 증후군",
+      "alt_en": [
+        "CRPS"
+      ]
+    },
+    {
+      "id": "s2-0089",
+      "en": "reflex sympathetic dystrophy",
+      "ko": "반사교감신경이상증",
+      "alt_en": [
+        "RSD"
+      ]
+    },
+    {
+      "id": "s2-0090",
+      "en": "allodynia",
+      "ko": "무해자극통증",
+      "alt_ko": [
+        "이질통증"
+      ]
+    },
+    {
+      "id": "s2-0091",
+      "en": "headache",
+      "ko": "두통",
+      "alt_en": [
+        "cephalalgia",
+        "cephalodynia"
+      ]
+    },
+    {
+      "id": "s2-0092",
+      "en": "chorea",
+      "ko": "무도증"
+    },
+    {
+      "id": "s2-0093",
+      "en": "nystagmus",
+      "ko": "안진",
+      "alt_ko": [
+        "눈떨림"
+      ]
+    },
+    {
+      "id": "s2-0094",
+      "en": "anencephaly",
+      "ko": "무뇌증"
+    },
+    {
+      "id": "s2-0095",
+      "en": "hydrocephalus",
+      "ko": "수두증"
+    },
+    {
+      "id": "s2-0096",
+      "en": "meningocele",
+      "ko": "수막탈출증",
+      "alt_ko": [
+        "수막류"
+      ]
+    },
+    {
+      "id": "s2-0097",
+      "en": "cerebral palsy",
+      "ko": "뇌성마비",
+      "alt_en": [
+        "CP"
+      ]
+    },
+    {
+      "id": "s2-0098",
+      "en": "Bell’s palsy",
+      "ko": "벨마비",
+      "alt_en": [
+        "facial palsy"
+      ],
+      "alt_ko": [
+        "얼굴마비",
+        "제7번뇌신경마비"
+      ]
+    },
+    {
+      "id": "s2-0099",
+      "en": "trigeminal neuralgia",
+      "ko": "동통틱",
+      "alt_en": [
+        "tic douloureux"
+      ],
+      "alt_ko": [
+        "돌발삼차신경통",
+        "제5번뇌신경 장애"
+      ]
+    },
+    {
+      "id": "s2-0100",
+      "en": "cerebral concussion",
+      "ko": "뇌진탕"
+    },
+    {
+      "id": "s2-0101",
+      "en": "cerebral contusion",
+      "ko": "뇌타박상"
+    },
+    {
+      "id": "s2-0102",
+      "en": "cerebrovascular accident",
+      "ko": "뇌졸중",
+      "alt_en": [
+        "stroke",
+        "CVA"
+      ]
+    },
+    {
+      "id": "s2-0103",
+      "en": "apoplexy",
+      "ko": "졸중"
+    },
+    {
+      "id": "s2-0104",
+      "en": "transient ischemic attack",
+      "ko": "일과성허혈발작",
+      "alt_en": [
+        "TIA"
+      ]
+    },
+    {
+      "id": "s2-0105",
+      "en": "cerebral hemorrhage",
+      "ko": "뇌출혈"
+    },
+    {
+      "id": "s2-0106",
+      "en": "epidural hematoma",
+      "ko": "경막외혈종",
+      "alt_en": [
+        "extradural hematoma",
+        "EDH"
+      ],
+      "alt_ko": [
+        "경막바깥혈종"
+      ]
+    },
+    {
+      "id": "s2-0107",
+      "en": "subdural hemorrhage",
+      "ko": "경막밑출혈",
+      "alt_en": [
+        "SDH"
+      ],
+      "alt_ko": [
+        "경막하출혈"
+      ]
+    },
+    {
+      "id": "s2-0108",
+      "en": "subarachnoid hemorrhage",
+      "ko": "거미막밑출혈",
+      "alt_en": [
+        "SAH"
+      ],
+      "alt_ko": [
+        "지주막하출혈"
+      ]
+    },
+    {
+      "id": "s2-0109",
+      "en": "cerebral infarction",
+      "ko": "뇌경색증"
+    },
+    {
+      "id": "s2-0110",
+      "en": "cerebral aneurysm",
+      "ko": "뇌동맥류"
+    },
+    {
+      "id": "s2-0111",
+      "en": "Parkinson disease",
+      "ko": "파킨슨병"
+    },
+    {
+      "id": "s2-0112",
+      "en": "paralysis agitans",
+      "ko": "떨림마비"
+    },
+    {
+      "id": "s2-0113",
+      "en": "rabies",
+      "ko": "공수병",
+      "alt_ko": [
+        "광견병"
+      ]
+    },
+    {
+      "id": "s2-0114",
+      "en": "hydrophobia",
+      "ko": "물공포증"
+    },
+    {
+      "id": "s2-0115",
+      "en": "multiple sclerosis",
+      "ko": "다발경화증",
+      "alt_en": [
+        "MS"
+      ]
+    },
+    {
+      "id": "s2-0116",
+      "en": "amyotrophic lateral sclerosis",
+      "ko": "근위축측삭경화증",
+      "alt_en": [
+        "Lou Gehrig disease",
+        "ALS"
+      ]
+    },
+    {
+      "id": "s2-0117",
+      "en": "myasthenia gravis",
+      "ko": "중증근무력증"
+    },
+    {
+      "id": "s2-0118",
+      "en": "meningitis",
+      "ko": "수막염"
+    },
+    {
+      "id": "s2-0119",
+      "en": "encephalitis",
+      "ko": "뇌염"
+    },
+    {
+      "id": "s2-0120",
+      "en": "polyneuritis",
+      "ko": "다(발)신경염"
+    },
+    {
+      "id": "s2-0121",
+      "en": "Huntington disease",
+      "ko": "헌팅턴병"
+    },
+    {
+      "id": "s2-0122",
+      "en": "Alzheimer disease",
+      "ko": "알츠하이머병"
+    },
+    {
+      "id": "s2-0123",
+      "en": "dementia with Lewy body",
+      "ko": "레비소체치매"
+    },
+    {
+      "id": "s2-0124",
+      "en": "Guillain-Barre syndrome",
+      "ko": "기앵-바레증후군"
+    },
+    {
+      "id": "s2-0125",
+      "en": "acute inflammatory demyelinating polyneuropathy",
+      "ko": "급성원인불명다(발)신경염",
+      "alt_en": [
+        "AIDP"
+      ]
+    },
+    {
+      "id": "s2-0126",
+      "en": "epilepsy",
+      "ko": "뇌전증"
+    },
+    {
+      "id": "s2-0127",
+      "en": "petit mal epilepsy",
+      "ko": "소발작뇌전증"
+    },
+    {
+      "id": "s2-0128",
+      "en": "grand mal epilepsy",
+      "ko": "대발작뇌전증"
+    },
+    {
+      "id": "s2-0129",
+      "en": "spina bifida",
+      "ko": "이분척추",
+      "alt_en": [
+        "rachischisis"
+      ],
+      "alt_ko": [
+        "척추갈림증"
+      ]
+    },
+    {
+      "id": "s2-0130",
+      "en": "herniated intervertebral disk",
+      "ko": "탈출추간판",
+      "alt_en": [
+        "HIVD"
+      ]
+    },
+    {
+      "id": "s2-0131",
+      "en": "astrocytoma",
+      "ko": "별아교세포종"
+    },
+    {
+      "id": "s2-0132",
+      "en": "meningioma",
+      "ko": "수막종"
+    },
+    {
+      "id": "s2-0133",
+      "en": "Schwannoma",
+      "ko": "슈반종",
+      "alt_ko": [
+        "신경집종",
+        "신경초종"
+      ]
+    },
+    {
+      "id": "s2-0134",
+      "en": "chordoma",
+      "ko": "척삭종"
+    },
+    {
+      "id": "s2-0135",
+      "en": "craniotomy",
+      "ko": "머리뼈절개",
+      "alt_ko": [
+        "개두"
+      ]
+    },
+    {
+      "id": "s2-0136",
+      "en": "craniectomy",
+      "ko": "머리뼈절제",
+      "alt_ko": [
+        "두개골절제"
+      ]
+    },
+    {
+      "id": "s2-0137",
+      "en": "laminectomy",
+      "ko": "척추후궁절제"
+    },
+    {
+      "id": "s2-0138",
+      "en": "neurolysis",
+      "ko": "신경박리"
+    },
+    {
+      "id": "s2-0139",
+      "en": "neurorrhaphy",
+      "ko": "신경봉합"
+    },
+    {
+      "id": "s2-0140",
+      "en": "stereotactic neurosurgery",
+      "ko": "정위수술",
+      "alt_ko": [
+        "뇌정위수술"
+      ]
+    },
+    {
+      "id": "s2-0141",
+      "en": "cryosurgery",
+      "ko": "냉동수술"
+    },
+    {
+      "id": "s2-0142",
+      "en": "thymectomy",
+      "ko": "가슴샘절제",
+      "alt_ko": [
+        "흉선절제"
+      ]
+    },
+    {
+      "id": "s2-0143",
+      "en": "trephination",
+      "ko": "원형절제",
+      "alt_ko": [
+        "천공"
+      ]
+    },
+    {
+      "id": "s2-0144",
+      "en": "sympathectomy",
+      "ko": "교감신경절제"
+    },
+    {
+      "id": "s2-0145",
+      "en": "vagotomy",
+      "ko": "미주신경절단"
+    },
+    {
+      "id": "s2-0146",
+      "en": "cordotomy",
+      "ko": "척수시상로절단",
+      "alt_en": [
+        "chordotomy"
+      ]
+    },
+    {
+      "id": "s2-0147",
+      "en": "thalamotomy",
+      "ko": "시상파괴술"
+    },
+    {
+      "id": "s2-0148",
+      "en": "tractotomy",
+      "ko": "신경로절단"
+    },
+    {
+      "id": "s2-0149",
+      "en": "microendoscopic discectomy",
+      "ko": "미세내시경 추간판절제"
+    },
+    {
+      "id": "s2-0150",
+      "en": "deep brain stimulation",
+      "ko": "깊은뇌자극",
+      "alt_en": [
+        "DBS"
+      ],
+      "alt_ko": [
+        "심부뇌자극"
+      ]
+    },
+    {
+      "id": "s2-0151",
+      "en": "ventriculoperitoneal shunt",
+      "ko": "뇌실복막강션트",
+      "alt_en": [
+        "VP shunt"
+      ]
+    },
+    {
+      "id": "s2-0152",
+      "en": "lumbar puncture",
+      "ko": "요추천자",
+      "alt_en": [
+        "spinal tap"
+      ],
+      "alt_ko": [
+        "척추천자"
+      ]
+    },
+    {
+      "id": "s2-0153",
+      "en": "brain computed tomography",
+      "ko": "뇌전산화 단층촬영",
+      "alt_en": [
+        "CT"
+      ]
+    },
+    {
+      "id": "s2-0154",
+      "en": "brain scan",
+      "ko": "뇌스캔"
+    },
+    {
+      "id": "s2-0155",
+      "en": "cerebral angiography",
+      "ko": "뇌혈관조영"
+    },
+    {
+      "id": "s2-0156",
+      "en": "ventriculography",
+      "ko": "뇌실조영"
+    },
+    {
+      "id": "s2-0157",
+      "en": "myelography",
+      "ko": "척수조영"
+    },
+    {
+      "id": "s2-0158",
+      "en": "Discography",
+      "ko": "추간판조영"
+    },
+    {
+      "id": "s2-0159",
+      "en": "echoencephalography",
+      "ko": "뇌초음파검사"
+    },
+    {
+      "id": "s2-0160",
+      "en": "electroencephalography",
+      "ko": "뇌파검사",
+      "alt_en": [
+        "EEG"
+      ]
+    },
+    {
+      "id": "s2-0161",
+      "en": "deep tendon reflex",
+      "ko": "깊은힘줄반사",
+      "alt_en": [
+        "DTR"
+      ],
+      "alt_ko": [
+        "심부건반사"
+      ]
+    },
+    {
+      "id": "s2-0162",
+      "en": "Babinski sign",
+      "ko": "바뱅스키징후"
+    },
+    {
+      "id": "s2-0163",
+      "en": "Brudzinski sign",
+      "ko": "브루진스키징후"
+    },
+    {
+      "id": "s2-0164",
+      "en": "Romberg sign",
+      "ko": "롬베르크 징후"
+    },
+    {
+      "id": "s2-0165",
+      "en": "Glasgow Coma Scale",
+      "ko": "글래스고혼수척도",
+      "alt_en": [
+        "GCS"
+      ]
+    },
+    {
+      "id": "s2-0166",
+      "en": "visual analogue scale",
+      "ko": "시각통증등급",
+      "alt_en": [
+        "VAS"
+      ],
+      "alt_ko": [
+        "시각아날로그척도"
+      ]
+    },
+    {
+      "id": "s2-0167",
+      "en": "numeric rating scale",
+      "ko": "수치통증척도",
+      "alt_en": [
+        "NRS"
+      ]
+    }
+  ]
+}

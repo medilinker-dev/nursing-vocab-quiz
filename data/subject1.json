@@ -1,0 +1,1120 @@
+{
+  "subjectId": "subject1",
+  "subjectName": "소화계통",
+  "version": "2026-05-10",
+  "words": [
+    {
+      "id": "s1-0001",
+      "en": "oral cavity",
+      "ko": "입안",
+      "alt_ko": [
+        "구강"
+      ]
+    },
+    {
+      "id": "s1-0002",
+      "en": "pharynx",
+      "ko": "인두",
+      "alt_en": [
+        "throat"
+      ]
+    },
+    {
+      "id": "s1-0003",
+      "en": "tongue",
+      "ko": "혀"
+    },
+    {
+      "id": "s1-0004",
+      "en": "tonsil",
+      "ko": "편도"
+    },
+    {
+      "id": "s1-0005",
+      "en": "salivary glands",
+      "ko": "침샘"
+    },
+    {
+      "id": "s1-0006",
+      "en": "esophagus",
+      "ko": "식도"
+    },
+    {
+      "id": "s1-0007",
+      "en": "stomach",
+      "ko": "위"
+    },
+    {
+      "id": "s1-0008",
+      "en": "small intestine",
+      "ko": "소장",
+      "alt_ko": [
+        "작은창자"
+      ]
+    },
+    {
+      "id": "s1-0009",
+      "en": "large intestine",
+      "ko": "대장",
+      "alt_ko": [
+        "큰창자"
+      ]
+    },
+    {
+      "id": "s1-0010",
+      "en": "liver",
+      "ko": "간"
+    },
+    {
+      "id": "s1-0011",
+      "en": "gallbladder",
+      "ko": "담낭",
+      "alt_en": [
+        "GB"
+      ],
+      "alt_ko": [
+        "쓸개"
+      ]
+    },
+    {
+      "id": "s1-0012",
+      "en": "pancreas",
+      "ko": "췌장",
+      "alt_ko": [
+        "이자"
+      ]
+    },
+    {
+      "id": "s1-0013",
+      "en": "ascites",
+      "ko": "복수"
+    },
+    {
+      "id": "s1-0014",
+      "en": "cheilitis",
+      "ko": "입술염"
+    },
+    {
+      "id": "s1-0015",
+      "en": "glossodynia",
+      "ko": "혀통증"
+    },
+    {
+      "id": "s1-0016",
+      "en": "halitosis",
+      "ko": "입냄새"
+    },
+    {
+      "id": "s1-0017",
+      "en": "oral leukoplakia",
+      "ko": "입안백색판"
+    },
+    {
+      "id": "s1-0018",
+      "en": "ptyalism",
+      "ko": "침과다증",
+      "alt_en": [
+        "salivation"
+      ]
+    },
+    {
+      "id": "s1-0019",
+      "en": "xerostomia",
+      "ko": "입안마름증",
+      "alt_ko": [
+        "구강건조증"
+      ]
+    },
+    {
+      "id": "s1-0020",
+      "en": "toothache",
+      "ko": "치통"
+    },
+    {
+      "id": "s1-0021",
+      "en": "bruxism",
+      "ko": "이갈이",
+      "alt_en": [
+        "teeth grinding"
+      ]
+    },
+    {
+      "id": "s1-0022",
+      "en": "dental calculus",
+      "ko": "치석",
+      "alt_en": [
+        "dental plaque"
+      ]
+    },
+    {
+      "id": "s1-0023",
+      "en": "achlorhydria",
+      "ko": "무위산증"
+    },
+    {
+      "id": "s1-0024",
+      "en": "hyperchlorhydria",
+      "ko": "위산과다(증)"
+    },
+    {
+      "id": "s1-0025",
+      "en": "acholia",
+      "ko": "무담즙"
+    },
+    {
+      "id": "s1-0026",
+      "en": "aphagia",
+      "ko": "삼킴불능"
+    },
+    {
+      "id": "s1-0027",
+      "en": "anorexia",
+      "ko": "식욕부진"
+    },
+    {
+      "id": "s1-0028",
+      "en": "nausea",
+      "ko": "구역",
+      "alt_ko": [
+        "메스꺼움"
+      ]
+    },
+    {
+      "id": "s1-0029",
+      "en": "vomit",
+      "ko": "구토"
+    },
+    {
+      "id": "s1-0030",
+      "en": "eructation",
+      "ko": "트림",
+      "alt_en": [
+        "belching"
+      ]
+    },
+    {
+      "id": "s1-0031",
+      "en": "regurgitation",
+      "ko": "역류"
+    },
+    {
+      "id": "s1-0032",
+      "en": "brash",
+      "ko": "속쓰림",
+      "alt_en": [
+        "heartburn"
+      ],
+      "alt_ko": [
+        "작열감"
+      ]
+    },
+    {
+      "id": "s1-0033",
+      "en": "borborygmus",
+      "ko": "창자기체소리"
+    },
+    {
+      "id": "s1-0034",
+      "en": "dumping syndrome",
+      "ko": "빠른비움증후군",
+      "alt_ko": [
+        "덤핑증후군"
+      ]
+    },
+    {
+      "id": "s1-0035",
+      "en": "dyspepsia",
+      "ko": "소화불량",
+      "alt_en": [
+        "indigestion"
+      ]
+    },
+    {
+      "id": "s1-0036",
+      "en": "flatus",
+      "ko": "방귀"
+    },
+    {
+      "id": "s1-0037",
+      "en": "fecalith",
+      "ko": "대변결석"
+    },
+    {
+      "id": "s1-0038",
+      "en": "constipation",
+      "ko": "변비"
+    },
+    {
+      "id": "s1-0039",
+      "en": "obstipation",
+      "ko": "난치변비"
+    },
+    {
+      "id": "s1-0040",
+      "en": "melena",
+      "ko": "흑색변"
+    },
+    {
+      "id": "s1-0041",
+      "en": "hematochezia",
+      "ko": "혈변"
+    },
+    {
+      "id": "s1-0042",
+      "en": "hematemesis",
+      "ko": "토혈",
+      "alt_ko": [
+        "혈액구토"
+      ]
+    },
+    {
+      "id": "s1-0043",
+      "en": "hemoperitoneum",
+      "ko": "혈액복막"
+    },
+    {
+      "id": "s1-0044",
+      "en": "steatorrhea",
+      "ko": "지방변"
+    },
+    {
+      "id": "s1-0045",
+      "en": "tenesmus",
+      "ko": "뒤무직"
+    },
+    {
+      "id": "s1-0046",
+      "en": "incontinence",
+      "ko": "실금",
+      "alt_ko": [
+        "지림"
+      ]
+    },
+    {
+      "id": "s1-0047",
+      "en": "pruritus ani",
+      "ko": "항문가려움"
+    },
+    {
+      "id": "s1-0048",
+      "en": "hepatomegaly",
+      "ko": "간비대"
+    },
+    {
+      "id": "s1-0049",
+      "en": "glycosuria",
+      "ko": "당뇨"
+    },
+    {
+      "id": "s1-0050",
+      "en": "hyperglycemia",
+      "ko": "고혈당"
+    },
+    {
+      "id": "s1-0051",
+      "en": "hypoglycemia",
+      "ko": "저혈당(증)"
+    },
+    {
+      "id": "s1-0052",
+      "en": "hyperbilirubinemia",
+      "ko": "고빌리루빈혈증"
+    },
+    {
+      "id": "s1-0053",
+      "en": "hypobilirubinemia",
+      "ko": "저빌리루빈혈증"
+    },
+    {
+      "id": "s1-0054",
+      "en": "hypercholesterolemia",
+      "ko": "고콜레스테롤혈증"
+    },
+    {
+      "id": "s1-0055",
+      "en": "hypocholesterolemia",
+      "ko": "저콜레스테롤혈증"
+    },
+    {
+      "id": "s1-0056",
+      "en": "jaundice",
+      "ko": "황달",
+      "alt_en": [
+        "icterus"
+      ]
+    },
+    {
+      "id": "s1-0057",
+      "en": "aphthous stomatitis",
+      "ko": "아프타입안염"
+    },
+    {
+      "id": "s1-0058",
+      "en": "herpetic gingivostomatitis",
+      "ko": "포진잇몸입안염",
+      "alt_en": [
+        "cold sore",
+        "fever blister"
+      ]
+    },
+    {
+      "id": "s1-0059",
+      "en": "oral moniliasis",
+      "ko": "구강모닐리아증"
+    },
+    {
+      "id": "s1-0060",
+      "en": "thrush",
+      "ko": "아구창",
+      "alt_en": [
+        "oral candidiasis"
+      ],
+      "alt_ko": [
+        "구강칸디다증"
+      ]
+    },
+    {
+      "id": "s1-0061",
+      "en": "vincent angina",
+      "ko": "뱅상잇몸염"
+    },
+    {
+      "id": "s1-0062",
+      "en": "necrotizing ulcerative gingivitis",
+      "ko": "괴사궤양잇몸염"
+    },
+    {
+      "id": "s1-0063",
+      "en": "trench mouth",
+      "ko": "참호입안염"
+    },
+    {
+      "id": "s1-0064",
+      "en": "Behcet disease",
+      "ko": "베체트병"
+    },
+    {
+      "id": "s1-0065",
+      "en": "sialadenitis",
+      "ko": "침샘염"
+    },
+    {
+      "id": "s1-0066",
+      "en": "epidemic parotitis",
+      "ko": "볼거리",
+      "alt_en": [
+        "mumps"
+      ],
+      "alt_ko": [
+        "유행귀밑샘염"
+      ]
+    },
+    {
+      "id": "s1-0067",
+      "en": "sialolithiasis",
+      "ko": "침샘결석증"
+    },
+    {
+      "id": "s1-0068",
+      "en": "uvulitis",
+      "ko": "목젖염",
+      "alt_en": [
+        "staphylitis"
+      ]
+    },
+    {
+      "id": "s1-0069",
+      "en": "Sjögren syndrome",
+      "ko": "쇠그렌증후군"
+    },
+    {
+      "id": "s1-0070",
+      "en": "cleft lip",
+      "ko": "입술갈림증",
+      "alt_en": [
+        "harelip"
+      ],
+      "alt_ko": [
+        "구순염"
+      ]
+    },
+    {
+      "id": "s1-0071",
+      "en": "cleft palate",
+      "ko": "입천장갈림증"
+    },
+    {
+      "id": "s1-0072",
+      "en": "ankyloglossia",
+      "ko": "혀유착증",
+      "alt_en": [
+        "tongue-tie"
+      ]
+    },
+    {
+      "id": "s1-0073",
+      "en": "gingivitis",
+      "ko": "잇몸염",
+      "alt_ko": [
+        "치은염"
+      ]
+    },
+    {
+      "id": "s1-0074",
+      "en": "periodontal disease",
+      "ko": "치주병",
+      "alt_ko": [
+        "치주질환"
+      ]
+    },
+    {
+      "id": "s1-0075",
+      "en": "dental caries",
+      "ko": "충치",
+      "alt_en": [
+        "dental decay"
+      ]
+    },
+    {
+      "id": "s1-0076",
+      "en": "edentia",
+      "ko": "무치증"
+    },
+    {
+      "id": "s1-0077",
+      "en": "impacted tooth",
+      "ko": "매복이",
+      "alt_ko": [
+        "매복치"
+      ]
+    },
+    {
+      "id": "s1-0078",
+      "en": "pulpitis",
+      "ko": "치수염"
+    },
+    {
+      "id": "s1-0079",
+      "en": "achalasia",
+      "ko": "이완불능증"
+    },
+    {
+      "id": "s1-0080",
+      "en": "atresia of the esophagus",
+      "ko": "식도폐쇄증"
+    },
+    {
+      "id": "s1-0081",
+      "en": "adenoids",
+      "ko": "아데노이드"
+    },
+    {
+      "id": "s1-0082",
+      "en": "peritonsillar abscess",
+      "ko": "편도주위고름집",
+      "alt_en": [
+        "quinsy"
+      ]
+    },
+    {
+      "id": "s1-0083",
+      "en": "esophageal varices",
+      "ko": "식도 정맥류(출혈)"
+    },
+    {
+      "id": "s1-0084",
+      "en": "ulcer",
+      "ko": "궤양"
+    },
+    {
+      "id": "s1-0085",
+      "en": "pyloric stenosis",
+      "ko": "날문협착증"
+    },
+    {
+      "id": "s1-0086",
+      "en": "Hernia",
+      "ko": "탈장",
+      "alt_en": [
+        "cele"
+      ]
+    },
+    {
+      "id": "s1-0087",
+      "en": "Hirschsprung disease",
+      "ko": "히르슈스프룽병",
+      "alt_en": [
+        "congenital megacolon"
+      ],
+      "alt_ko": [
+        "선천거대결장증"
+      ]
+    },
+    {
+      "id": "s1-0088",
+      "en": "Meckel diverticulum",
+      "ko": "메켈 곁주머니"
+    },
+    {
+      "id": "s1-0089",
+      "en": "ileitis",
+      "ko": "회장염"
+    },
+    {
+      "id": "s1-0090",
+      "en": "ileus",
+      "ko": "장폐색증"
+    },
+    {
+      "id": "s1-0091",
+      "en": "intussusception",
+      "ko": "장중첩(증)"
+    },
+    {
+      "id": "s1-0092",
+      "en": "volvulus",
+      "ko": "장꼬임",
+      "alt_ko": [
+        "장염전"
+      ]
+    },
+    {
+      "id": "s1-0093",
+      "en": "irritable bowel syndrome",
+      "ko": "과민대장증후군",
+      "alt_en": [
+        "IBS"
+      ]
+    },
+    {
+      "id": "s1-0094",
+      "en": "ulcerative colitis",
+      "ko": "궤양결장염"
+    },
+    {
+      "id": "s1-0095",
+      "en": "colon polyposis",
+      "ko": "대장용종증"
+    },
+    {
+      "id": "s1-0096",
+      "en": "familial adenomatous polyposis",
+      "ko": "가족성샘종용종증"
+    },
+    {
+      "id": "s1-0097",
+      "en": "Crohn’s disease",
+      "ko": "크론병"
+    },
+    {
+      "id": "s1-0098",
+      "en": "regional ileitis",
+      "ko": "국소회장염"
+    },
+    {
+      "id": "s1-0099",
+      "en": "diverticula",
+      "ko": "곁주머니",
+      "alt_ko": [
+        "게실"
+      ]
+    },
+    {
+      "id": "s1-0100",
+      "en": "appendicitis",
+      "ko": "충수염"
+    },
+    {
+      "id": "s1-0101",
+      "en": "anal fistula",
+      "ko": "항문샛길",
+      "alt_ko": [
+        "치루"
+      ]
+    },
+    {
+      "id": "s1-0102",
+      "en": "hemorrhoid",
+      "ko": "치핵",
+      "alt_en": [
+        "pile"
+      ]
+    },
+    {
+      "id": "s1-0103",
+      "en": "cholecystitis",
+      "ko": "담낭염"
+    },
+    {
+      "id": "s1-0104",
+      "en": "cholangitis",
+      "ko": "담관염"
+    },
+    {
+      "id": "s1-0105",
+      "en": "cholelithiasis",
+      "ko": "담석",
+      "alt_en": [
+        "gallstone"
+      ],
+      "alt_ko": [
+        "담석증"
+      ]
+    },
+    {
+      "id": "s1-0106",
+      "en": "choledocholithiasis",
+      "ko": "총담관결석증"
+    },
+    {
+      "id": "s1-0107",
+      "en": "cholestasis",
+      "ko": "담즙정체"
+    },
+    {
+      "id": "s1-0108",
+      "en": "viral hepatitis",
+      "ko": "바이러스간염"
+    },
+    {
+      "id": "s1-0109",
+      "en": "fatty liver",
+      "ko": "지방간"
+    },
+    {
+      "id": "s1-0110",
+      "en": "liver cirrhosis",
+      "ko": "간경화증"
+    },
+    {
+      "id": "s1-0111",
+      "en": "hepatoma",
+      "ko": "간암",
+      "alt_en": [
+        "hepatocellular carcinoma",
+        "HCC"
+      ],
+      "alt_ko": [
+        "간세포암종"
+      ]
+    },
+    {
+      "id": "s1-0112",
+      "en": "hepatic coma",
+      "ko": "간성혼수"
+    },
+    {
+      "id": "s1-0113",
+      "en": "hepatic encephalopathy",
+      "ko": "간성 뇌병증"
+    },
+    {
+      "id": "s1-0114",
+      "en": "Wilson disease",
+      "ko": "윌슨병"
+    },
+    {
+      "id": "s1-0115",
+      "en": "Reye syndrome",
+      "ko": "라이에 증후군"
+    },
+    {
+      "id": "s1-0116",
+      "en": "Budd－Chiari syndrome",
+      "ko": "버드－히아리증후군"
+    },
+    {
+      "id": "s1-0117",
+      "en": "pancreatitis",
+      "ko": "췌장염"
+    },
+    {
+      "id": "s1-0118",
+      "en": "acute pancreatitis",
+      "ko": "급성췌장염"
+    },
+    {
+      "id": "s1-0119",
+      "en": "chronic pancreatitis",
+      "ko": "만성췌장염"
+    },
+    {
+      "id": "s1-0120",
+      "en": "cheiloplasty",
+      "ko": "입술성형"
+    },
+    {
+      "id": "s1-0121",
+      "en": "frenulotomy",
+      "ko": "주름띠절단"
+    },
+    {
+      "id": "s1-0122",
+      "en": "glossectomy",
+      "ko": "혀절제"
+    },
+    {
+      "id": "s1-0123",
+      "en": "palatoplasty",
+      "ko": "입천장성형"
+    },
+    {
+      "id": "s1-0124",
+      "en": "parotidectomy",
+      "ko": "귀밑샘절제"
+    },
+    {
+      "id": "s1-0125",
+      "en": "sialadenectomy",
+      "ko": "침샘절제"
+    },
+    {
+      "id": "s1-0126",
+      "en": "sialolithotomy",
+      "ko": "침결석제거"
+    },
+    {
+      "id": "s1-0127",
+      "en": "stomatoplasty",
+      "ko": "입안성형"
+    },
+    {
+      "id": "s1-0128",
+      "en": "scaling",
+      "ko": "치석제거"
+    },
+    {
+      "id": "s1-0129",
+      "en": "tooth extraction",
+      "ko": "발치"
+    },
+    {
+      "id": "s1-0130",
+      "en": "pulpectomy",
+      "ko": "치수절제"
+    },
+    {
+      "id": "s1-0131",
+      "en": "alveoloplasty",
+      "ko": "이틀성형",
+      "alt_ko": [
+        "치조성형"
+      ]
+    },
+    {
+      "id": "s1-0132",
+      "en": "esophagotomy",
+      "ko": "식도절개"
+    },
+    {
+      "id": "s1-0133",
+      "en": "esophagectomy",
+      "ko": "식도절제"
+    },
+    {
+      "id": "s1-0134",
+      "en": "esophagogastrostomy",
+      "ko": "식도위연결"
+    },
+    {
+      "id": "s1-0135",
+      "en": "percutaneous endoscopic gastrostomy",
+      "ko": "피부경유내시경위창냄술",
+      "alt_en": [
+        "PEG"
+      ]
+    },
+    {
+      "id": "s1-0136",
+      "en": "gastrectomy",
+      "ko": "위절제"
+    },
+    {
+      "id": "s1-0137",
+      "en": "pyloromyotomy",
+      "ko": "날문근육절개",
+      "alt_ko": [
+        "날문근층절개"
+      ]
+    },
+    {
+      "id": "s1-0138",
+      "en": "Fredet-Ramstedt operation",
+      "ko": "프레데-람스테트 수술"
+    },
+    {
+      "id": "s1-0139",
+      "en": "vagotomy",
+      "ko": "미주신경절단"
+    },
+    {
+      "id": "s1-0140",
+      "en": "truncal vagotomy",
+      "ko": "줄기미주신경절단"
+    },
+    {
+      "id": "s1-0141",
+      "en": "selective vagotomy",
+      "ko": "선택미주신경절단"
+    },
+    {
+      "id": "s1-0142",
+      "en": "gastric lavage",
+      "ko": "위세척"
+    },
+    {
+      "id": "s1-0143",
+      "en": "gastric gavage",
+      "ko": "위영양"
+    },
+    {
+      "id": "s1-0144",
+      "en": "diverticulectomy",
+      "ko": "곁주머니절제"
+    },
+    {
+      "id": "s1-0145",
+      "en": "Duhamel operation",
+      "ko": "듀아멜수술"
+    },
+    {
+      "id": "s1-0146",
+      "en": "colorectostomy",
+      "ko": "결장직장연결"
+    },
+    {
+      "id": "s1-0147",
+      "en": "enterolysis",
+      "ko": "장유착박리"
+    },
+    {
+      "id": "s1-0148",
+      "en": "proctectomy",
+      "ko": "직장절제"
+    },
+    {
+      "id": "s1-0149",
+      "en": "hemorrhoidectomy",
+      "ko": "치핵절제"
+    },
+    {
+      "id": "s1-0150",
+      "en": "herniorrhaphy",
+      "ko": "탈장교정",
+      "alt_en": [
+        "hernioplasty"
+      ],
+      "alt_ko": [
+        "탈장성형"
+      ]
+    },
+    {
+      "id": "s1-0151",
+      "en": "abdominotomy",
+      "ko": "개복",
+      "alt_en": [
+        "celiotomy",
+        "laparotomy"
+      ]
+    },
+    {
+      "id": "s1-0152",
+      "en": "mesopexy",
+      "ko": "장간막고정"
+    },
+    {
+      "id": "s1-0153",
+      "en": "hepatorrhaphy",
+      "ko": "간봉합"
+    },
+    {
+      "id": "s1-0154",
+      "en": "laparoscopic cholecystectomy",
+      "ko": "복강경 담낭절제"
+    },
+    {
+      "id": "s1-0155",
+      "en": "choledocholithotomy",
+      "ko": "총담관결석제거"
+    },
+    {
+      "id": "s1-0156",
+      "en": "pancreatectomy",
+      "ko": "췌장절제"
+    },
+    {
+      "id": "s1-0157",
+      "en": "esophagectomy c esophageal reconstruction",
+      "ko": "식도절제 및 식도재건"
+    },
+    {
+      "id": "s1-0158",
+      "en": "Billroth I operation",
+      "ko": "빌로트 I 수술"
+    },
+    {
+      "id": "s1-0159",
+      "en": "gastroduodenostomy",
+      "ko": "위십이지장연결"
+    },
+    {
+      "id": "s1-0160",
+      "en": "Billroth II operation",
+      "ko": "빌로트 II 수술"
+    },
+    {
+      "id": "s1-0161",
+      "en": "gastrojejunostomy",
+      "ko": "위공장연결"
+    },
+    {
+      "id": "s1-0162",
+      "en": "low anterior resection",
+      "ko": "저위 전방절제",
+      "alt_en": [
+        "LAR"
+      ]
+    },
+    {
+      "id": "s1-0163",
+      "en": "Miles operation",
+      "ko": "마일즈 수술"
+    },
+    {
+      "id": "s1-0164",
+      "en": "abdominoperineal resection of rectum",
+      "ko": "복회음식 직장절제"
+    },
+    {
+      "id": "s1-0165",
+      "en": "Whipple operation",
+      "ko": "휘플수술",
+      "alt_en": [
+        "radical pancreaticoduodenectomy"
+      ]
+    },
+    {
+      "id": "s1-0166",
+      "en": "AFP",
+      "ko": "알파태아단백질",
+      "alt_ko": [
+        "간암 종양표지자검사"
+      ],
+      "note": "alpha fetoprotein"
+    },
+    {
+      "id": "s1-0167",
+      "en": "tumor marker",
+      "ko": "종양표지자"
+    },
+    {
+      "id": "s1-0168",
+      "en": "biopsy of liver",
+      "ko": "간생검"
+    },
+    {
+      "id": "s1-0169",
+      "en": "liver function test",
+      "ko": "간기능검사",
+      "alt_en": [
+        "LFT"
+      ]
+    },
+    {
+      "id": "s1-0170",
+      "en": "endoscopic retrograde cholangiopancreatography",
+      "ko": "내시경역행담췌관조영",
+      "alt_en": [
+        "ERCP"
+      ]
+    },
+    {
+      "id": "s1-0171",
+      "en": "gastroscopy",
+      "ko": "위내시경술"
+    },
+    {
+      "id": "s1-0172",
+      "en": "nasogastric intubation",
+      "ko": "코위관삽관",
+      "alt_en": [
+        "Levin tube",
+        "NG tube",
+        "L tube"
+      ]
+    },
+    {
+      "id": "s1-0173",
+      "en": "paracentesis",
+      "ko": "복수천자",
+      "alt_en": [
+        "abdominal puncture",
+        "abdonimocentesis"
+      ],
+      "alt_ko": [
+        "복강천자"
+      ]
+    },
+    {
+      "id": "s1-0174",
+      "en": "percutaneous transhepatic biliary drainage",
+      "ko": "피부간경유담즙배액",
+      "alt_en": [
+        "PTBD"
+      ],
+      "alt_ko": [
+        "경피경간경유담즙배액"
+      ]
+    },
+    {
+      "id": "s1-0175",
+      "en": "percutaneous transhepatic cholangiography",
+      "ko": "피부간경유담관조영",
+      "alt_en": [
+        "PTC"
+      ],
+      "alt_ko": [
+        "경피경간경유담관조영"
+      ]
+    },
+    {
+      "id": "s1-0176",
+      "en": "intravenous cholangiography",
+      "ko": "정맥담관조영",
+      "alt_en": [
+        "IVC"
+      ]
+    },
+    {
+      "id": "s1-0177",
+      "en": "cholecystography",
+      "ko": "담낭조영"
+    },
+    {
+      "id": "s1-0178",
+      "en": "stool occult blood",
+      "ko": "대변 잠혈검사",
+      "alt_en": [
+        "OB"
+      ]
+    },
+    {
+      "id": "s1-0179",
+      "en": "stool culture",
+      "ko": "대변배양"
+    },
+    {
+      "id": "s1-0180",
+      "en": "upper gastrointestinal series",
+      "ko": "상부위장(관)조영",
+      "alt_en": [
+        "UGIS"
+      ]
+    },
+    {
+      "id": "s1-0181",
+      "en": "barium enema",
+      "ko": "바륨관장"
+    }
+  ]
+}

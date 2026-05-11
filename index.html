@@ -20,11 +20,36 @@
     </nav>
   </header>
 
+  <div id="inAppBanner" class="inapp-banner" hidden role="alert">
+    <div class="inapp-banner-body">
+      <strong>발음 안 들리세요?</strong>
+      <span id="inAppBannerMsg">카톡 내장 브라우저는 음성 재생이 안 될 수 있어요. <b>크롬·사파리</b>로 열어주세요.</span>
+    </div>
+    <div class="inapp-banner-actions">
+      <button id="inAppOpenBtn" class="btn btn-primary btn-sm" type="button">외부 브라우저로 열기</button>
+      <button id="inAppCopyBtn" class="btn btn-secondary btn-sm" type="button">링크 복사</button>
+      <button id="inAppDismissBtn" class="link-btn" type="button" aria-label="안내 닫기">✕</button>
+    </div>
+  </div>
+
   <main id="main" class="main" aria-live="polite">
     <!-- ===== Home ===== -->
     <section class="screen" id="screen-home">
-      <h1 class="screen-title">과목을 선택하세요</h1>
-      <p class="screen-sub">학습 기록은 이 브라우저에만 저장됩니다.</p>
+      <h1 class="screen-title">간호 단어 학습</h1>
+      <p class="screen-sub">학습 기록·북마크는 이 브라우저에만 저장됩니다.</p>
+
+      <div class="mode-tabs" role="tablist" aria-label="학습 모드">
+        <button class="mode-tab active" id="modeTabQuiz" data-mode="quiz" role="tab" aria-selected="true" type="button">
+          <span class="mode-emoji" aria-hidden="true">📝</span>
+          <span class="mode-name">퀴즈</span>
+          <span class="mode-desc">랜덤 출제·점수 기록</span>
+        </button>
+        <button class="mode-tab" id="modeTabFlash" data-mode="flashcard" role="tab" aria-selected="false" type="button">
+          <span class="mode-emoji" aria-hidden="true">🗂</span>
+          <span class="mode-name">단어장</span>
+          <span class="mode-desc">슬라이드로 훑어보기</span>
+        </button>
+      </div>
 
       <div class="count-picker" id="countPicker" role="radiogroup" aria-label="문항 수">
         <span class="count-label">문항 수</span>
@@ -76,6 +101,52 @@
         <button class="btn btn-primary" id="retryBtn" type="button">다시 풀기</button>
         <button class="btn btn-secondary" id="backHomeBtn" type="button">홈으로</button>
       </div>
+    </section>
+
+    <!-- ===== Flashcard ===== -->
+    <section class="screen" id="screen-flashcard" hidden>
+      <div class="fc-header">
+        <button class="link-btn" id="fcCloseBtn" type="button" aria-label="단어장 닫기">← 닫기</button>
+        <div class="fc-position">
+          <span id="fcIndex">1</span> / <span id="fcTotal">0</span>
+        </div>
+        <button class="icon-btn" id="fcBookmarkBtn" type="button" aria-label="북마크 토글" aria-pressed="false">☆</button>
+      </div>
+      <div class="progress-bar"><div id="fcProgressFill" class="progress-fill"></div></div>
+
+      <div class="fc-stage" id="fcStage" aria-live="polite">
+        <!-- card injected here -->
+      </div>
+
+      <div class="fc-nav">
+        <button class="btn btn-secondary" id="fcPrevBtn" type="button" aria-label="이전 단어">◀ 이전</button>
+        <button class="btn btn-primary" id="fcNextBtn" type="button" aria-label="다음 단어">다음 ▶</button>
+      </div>
+
+      <div class="fc-toolbar">
+        <label class="fc-toggle">
+          <span class="fc-toggle-label">필터</span>
+          <select id="fcFilter" class="fc-select">
+            <option value="all">전체</option>
+            <option value="bookmark">⭐ 북마크</option>
+            <option value="wrong">❌ 자주 틀린 단어</option>
+          </select>
+        </label>
+        <label class="fc-toggle">
+          <input type="checkbox" id="fcShuffle" />
+          <span>셔플</span>
+        </label>
+        <label class="fc-toggle">
+          <input type="checkbox" id="fcAutoplay" />
+          <span>자동 발음</span>
+        </label>
+        <label class="fc-toggle">
+          <input type="checkbox" id="fcHideMeaning" />
+          <span>뜻 가리기</span>
+        </label>
+      </div>
+
+      <p class="fc-hint">카드를 탭하면 뜻이 가려집니다. ← → 키 또는 좌우 스와이프로 이동.</p>
     </section>
 
     <!-- ===== History ===== -->

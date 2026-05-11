@@ -12,6 +12,9 @@
     attempts: "nursingQuiz.v1.attempts",
     wordStats: "nursingQuiz.v1.wordStats",
     count: "nursingQuiz.v1.count",
+    bookmarks: "nursingQuiz.v1.bookmarks",
+    flashcardPrefs: "nursingQuiz.v1.flashcardPrefs",
+    homeMode: "nursingQuiz.v1.homeMode",
   };
   // Auto-advance disabled: user always clicks "다음 →" to proceed.
 
@@ -19,8 +22,10 @@
   const state = {
     subjects: {}, // subjectId -> { subjectId, subjectName, version, words[] }
     currentRoute: "home",
-    quiz: null, // active quiz session
+    quiz: null,         // active quiz session
+    flashcard: null,    // active flashcard session
     selectedCount: DEFAULT_COUNT,
+    homeMode: "quiz",   // "quiz" | "flashcard"
   };
 
   // ---------- DOM helpers ----------
@@ -76,10 +81,33 @@
   }
   function setStoredCount(v) { writeJSON(STORAGE_KEYS.count, v); }
   function clearLearningData() {
-    // 학습 기록만 지우고 사용자가 고른 문항 수는 보존.
+    // 학습 기록만 지우고 사용자가 고른 문항 수·북마크는 보존.
     localStorage.removeItem(STORAGE_KEYS.attempts);
     localStorage.removeItem(STORAGE_KEYS.wordStats);
   }
+  function getBookmarks() { return readJSON(STORAGE_KEYS.bookmarks, {}); }
+  function isBookmarked(id) { return Boolean(getBookmarks()[id]); }
+  function toggleBookmark(id) {
+    const bm = getBookmarks();
+    if (bm[id]) delete bm[id];
+    else bm[id] = Date.now();
+    writeJSON(STORAGE_KEYS.bookmarks, bm);
+    return Boolean(bm[id]);
+  }
+  function getFlashcardPrefs() {
+    return readJSON(STORAGE_KEYS.flashcardPrefs, {
+      shuffle: false,
+      autoplay: false,
+      hideMeaning: false,
+      filter: "all",
+    });
+  }
+  function setFlashcardPrefs(p) { writeJSON(STORAGE_KEYS.flashcardPrefs, p); }
+  function getHomeMode() {
+    const v = readJSON(STORAGE_KEYS.homeMode, "quiz");
+    return v === "flashcard" ? "flashcard" : "quiz";
+  }
+  function setHomeMode(v) { writeJSON(STORAGE_KEYS.homeMode, v); }
 
   function recordAttempt(attempt) {
     const list = getAttempts();
@@ -150,6 +178,7 @@
       quiz: $("#screen-quiz"),
       result: $("#screen-result"),
       history: $("#screen-history"),
+      flashcard: $("#screen-flashcard"),
     };
     for (const [name, node] of Object.entries(screens)) {
       if (!node) continue;
@@ -189,7 +218,20 @@
     }
   }
 
+  function renderModeTabs() {
+    const tabs = $$(".mode-tab");
+    tabs.forEach((t) => {
+      const isActive = t.dataset.mode === state.homeMode;
+      t.classList.toggle("active", isActive);
+      t.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    // Hide count picker in flashcard mode.
+    const picker = $("#countPicker");
+    if (picker) picker.style.display = state.homeMode === "flashcard" ? "none" : "";
+  }
+
   function renderHome() {
+    renderModeTabs();
     renderCountPicker();
     const grid = $("#subjectGrid");
     clear(grid);
@@ -200,25 +242,22 @@
     }
     for (const sid of subjectIds) {
       const s = state.subjects[sid];
-      const summary = getSubjectSummary(sid);
+      grid.appendChild(buildSubjectCard(sid, s));
+    }
+  }
+
+  function buildSubjectCard(sid, s) {
+    if (state.homeMode === "flashcard") {
+      const bookmarks = getBookmarks();
+      const bookmarkedHere = s.words.filter((w) => bookmarks[w.id]).length;
+      const stats = getWordStats();
+      const wrongHere = s.words.filter((w) => stats[w.id] && stats[w.id].wrong > 0).length;
       const meta = el("div", { class: "meta" }, [
         el("div", {}, [el("strong", { text: `${s.words.length}` }), " 단어"]),
-        el(
-          "div",
-          {},
-          summary
-            ? [el("strong", { text: summary.lastScore }), " 최근 점수"]
-            : [el("strong", { text: "—" }), " 최근 점수"]
-        ),
-        el(
-          "div",
-          {},
-          summary
-            ? [el("strong", { text: `${summary.avgPct.toFixed(1)}%` }), " 평균 정답률"]
-            : [el("strong", { text: "—" }), " 평균 정답률"]
-        ),
+        el("div", {}, [el("strong", { text: `${bookmarkedHere}` }), " ⭐ 북마크"]),
+        el("div", {}, [el("strong", { text: `${wrongHere}` }), " ❌ 자주 틀림"]),
       ]);
-      const card = el("div", { class: "subject-card" }, [
+      return el("div", { class: "subject-card" }, [
         el("div", { class: "name", text: s.subjectName }),
         meta,
         el(
@@ -226,14 +265,46 @@
           {
             class: "btn btn-primary start",
             type: "button",
-            "aria-label": `${s.subjectName} 퀴즈 시작`,
-            onclick: () => startQuiz(sid),
+            "aria-label": `${s.subjectName} 단어장 열기`,
+            onclick: () => openFlashcards(sid),
           },
-          "퀴즈 시작"
+          "단어장 열기"
         ),
       ]);
-      grid.appendChild(card);
     }
+    // Quiz mode
+    const summary = getSubjectSummary(sid);
+    const meta = el("div", { class: "meta" }, [
+      el("div", {}, [el("strong", { text: `${s.words.length}` }), " 단어"]),
+      el(
+        "div",
+        {},
+        summary
+          ? [el("strong", { text: summary.lastScore }), " 최근 점수"]
+          : [el("strong", { text: "—" }), " 최근 점수"]
+      ),
+      el(
+        "div",
+        {},
+        summary
+          ? [el("strong", { text: `${summary.avgPct.toFixed(1)}%` }), " 평균 정답률"]
+          : [el("strong", { text: "—" }), " 평균 정답률"]
+      ),
+    ]);
+    return el("div", { class: "subject-card" }, [
+      el("div", { class: "name", text: s.subjectName }),
+      meta,
+      el(
+        "button",
+        {
+          class: "btn btn-primary start",
+          type: "button",
+          "aria-label": `${s.subjectName} 퀴즈 시작`,
+          onclick: () => startQuiz(sid),
+        },
+        "퀴즈 시작"
+      ),
+    ]);
   }
 
   function showLoadError(errors) {
@@ -453,11 +524,126 @@
     box.appendChild(choicesWrap);
   }
 
+  // ---------- In-app browser detection / banner ----------
+  function detectInAppBrowser() {
+    const ua = (navigator.userAgent || "").toLowerCase();
+    if (ua.includes("kakaotalk")) return { name: "kakao", label: "카카오톡" };
+    if (ua.includes("naver(inapp")) return { name: "naver", label: "네이버 앱" };
+    if (ua.includes("instagram")) return { name: "instagram", label: "인스타그램" };
+    if (ua.includes("fban") || ua.includes("fbav") || ua.includes("fb_iab"))
+      return { name: "facebook", label: "페이스북" };
+    if (/\bline\//.test(ua)) return { name: "line", label: "라인" };
+    return null;
+  }
+
+  function maybeShowInAppBanner() {
+    const banner = $("#inAppBanner");
+    if (!banner) return;
+    if (sessionStorage.getItem("nursingQuiz.inAppDismissed") === "1") return;
+    const info = detectInAppBrowser();
+    if (!info) return;
+    banner.removeAttribute("hidden");
+    const msg = $("#inAppBannerMsg");
+    if (msg) {
+      msg.innerHTML = `${info.label} 내장 브라우저는 발음 재생이 막혀 있을 수 있어요. <b>크롬·사파리</b>로 열어주세요.`;
+    }
+
+    const url = window.location.href;
+    const openBtn = $("#inAppOpenBtn");
+    if (openBtn) {
+      openBtn.addEventListener("click", () => openInExternalBrowser(url, info));
+    }
+    const copyBtn = $("#inAppCopyBtn");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(url);
+          copyBtn.textContent = "복사됨 ✓";
+          setTimeout(() => { copyBtn.textContent = "링크 복사"; }, 1800);
+        } catch (e) {
+          // Fallback: prompt so the user can copy manually.
+          window.prompt("아래 주소를 길게 눌러 복사하세요", url);
+        }
+      });
+    }
+    const dismiss = $("#inAppDismissBtn");
+    if (dismiss) {
+      dismiss.addEventListener("click", () => {
+        banner.setAttribute("hidden", "");
+        sessionStorage.setItem("nursingQuiz.inAppDismissed", "1");
+      });
+    }
+  }
+
+  function openInExternalBrowser(url, info) {
+    const isAndroid = /android/i.test(navigator.userAgent);
+    if (isAndroid) {
+      // Try Chrome via intent URL. If the device doesn't have Chrome, the
+      // intent's S.browser_fallback_url will open the system browser.
+      try {
+        const stripped = url.replace(/^https?:\/\//, "");
+        const intent =
+          "intent://" +
+          stripped +
+          "#Intent;scheme=https;package=com.android.chrome;" +
+          "S.browser_fallback_url=" + encodeURIComponent(url) + ";end";
+        window.location.href = intent;
+        return;
+      } catch (e) {
+        // fall through
+      }
+    }
+    // iOS — there is no reliable way to escape the WebView; instruct the user.
+    alert(
+      "iOS 카톡에서는 자동으로 열 수 없어요.\n" +
+      "오른쪽 상단 '⋯' (또는 공유) 버튼을 누르고\n" +
+      "'Safari로 열기'를 선택하거나, 링크를 복사해서 Safari에 붙여넣어 주세요."
+    );
+  }
+
   // ---------- TTS ----------
   let ttsAvailable =
     typeof window !== "undefined" &&
     typeof window.speechSynthesis !== "undefined" &&
     typeof window.SpeechSynthesisUtterance !== "undefined";
+
+  let cachedVoice = null;
+  let voicesLoaded = false;
+
+  function pickEnglishVoice() {
+    if (!ttsAvailable) return null;
+    if (typeof window.speechSynthesis.getVoices !== "function") return null;
+    let voices = [];
+    try { voices = window.speechSynthesis.getVoices() || []; } catch (e) { return null; }
+    if (voices.length === 0) return null;
+    voicesLoaded = true;
+    // Prefer a high-quality local en-US voice (Apple "Samantha", Google US English).
+    return (
+      voices.find((v) => v.lang === "en-US" && /samantha|google|apple/i.test(v.name)) ||
+      voices.find((v) => v.lang === "en-US" && v.localService) ||
+      voices.find((v) => v.lang === "en-US") ||
+      voices.find((v) => v.lang && v.lang.startsWith("en")) ||
+      null
+    );
+  }
+
+  function preloadVoices() {
+    if (!ttsAvailable) return;
+    cachedVoice = pickEnglishVoice();
+    try {
+      if (typeof window.speechSynthesis.addEventListener === "function") {
+        window.speechSynthesis.addEventListener("voiceschanged", () => {
+          cachedVoice = pickEnglishVoice();
+        });
+      } else {
+        window.speechSynthesis.onvoiceschanged = () => {
+          cachedVoice = pickEnglishVoice();
+        };
+      }
+    } catch (e) {
+      // Some WebViews throw when subscribing — non-fatal.
+    }
+  }
 
   function buildTtsButton(text) {
     const btn = el("button", {
@@ -471,18 +657,51 @@
       },
     });
     btn.textContent = "🔊";
-    if (!ttsAvailable) btn.setAttribute("disabled", "");
+    if (!ttsAvailable) {
+      btn.setAttribute("disabled", "");
+      btn.title = "이 브라우저에서는 발음 재생을 지원하지 않습니다";
+    }
     return btn;
+  }
+
+  function speakOnce(text, voice) {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.95;
+    u.pitch = 1;
+    u.volume = 1;
+    if (voice) u.voice = voice;
+    window.speechSynthesis.speak(u);
   }
 
   function playTts(text) {
     if (!ttsAvailable) return;
     try {
+      // Some WebViews freeze the synth if speech is interrupted while paused.
+      try { window.speechSynthesis.resume(); } catch (e) {}
       window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = "en-US";
-      u.rate = 0.95;
-      window.speechSynthesis.speak(u);
+
+      // If voices are not yet loaded (common in Android KakaoTalk WebView on
+      // the very first call), trigger a load and retry shortly.
+      if (!cachedVoice) cachedVoice = pickEnglishVoice();
+      if (!cachedVoice && typeof window.speechSynthesis.getVoices === "function") {
+        // Force voice list to populate (some engines load lazily here).
+        try { window.speechSynthesis.getVoices(); } catch (e) {}
+        // Retry a couple of times — voices arrive asynchronously.
+        let tries = 0;
+        const tick = () => {
+          cachedVoice = pickEnglishVoice();
+          if (cachedVoice || tries >= 6) {
+            speakOnce(text, cachedVoice);
+          } else {
+            tries += 1;
+            setTimeout(tick, 120);
+          }
+        };
+        tick();
+        return;
+      }
+      speakOnce(text, cachedVoice);
     } catch (e) {
       console.warn("TTS failed", e);
     }
@@ -903,6 +1122,265 @@
     }
   }
 
+  // ---------- Flashcards ----------
+  function openFlashcards(subjectId) {
+    const subject = state.subjects[subjectId];
+    if (!subject) return;
+    const prefs = getFlashcardPrefs();
+    state.flashcard = {
+      subjectId,
+      subjectName: subject.subjectName,
+      shuffle: !!prefs.shuffle,
+      autoplay: !!prefs.autoplay,
+      hideMeaning: !!prefs.hideMeaning,
+      filter: prefs.filter || "all",
+      index: 0,
+      order: [],          // array of words after filter+shuffle
+    };
+    setRoute("flashcard");
+    // Sync UI controls with prefs.
+    $("#fcShuffle").checked = state.flashcard.shuffle;
+    $("#fcAutoplay").checked = state.flashcard.autoplay;
+    $("#fcHideMeaning").checked = state.flashcard.hideMeaning;
+    $("#fcFilter").value = state.flashcard.filter;
+    rebuildFlashcardOrder();
+    renderFlashcard();
+  }
+
+  function rebuildFlashcardOrder() {
+    const fc = state.flashcard;
+    if (!fc) return;
+    const subject = state.subjects[fc.subjectId];
+    if (!subject) return;
+    const bookmarks = getBookmarks();
+    const stats = getWordStats();
+    let pool = subject.words.slice();
+    if (fc.filter === "bookmark") {
+      pool = pool.filter((w) => bookmarks[w.id]);
+    } else if (fc.filter === "wrong") {
+      pool = pool.filter((w) => stats[w.id] && stats[w.id].wrong > 0);
+      // sort by wrong count descending so the worst offenders come first.
+      pool.sort((a, b) => (stats[b.id].wrong - stats[a.id].wrong));
+    }
+    if (fc.shuffle && fc.filter !== "wrong") pool = shuffle(pool);
+    fc.order = pool;
+    if (fc.index >= pool.length) fc.index = 0;
+  }
+
+  function persistFlashcardPrefs() {
+    const fc = state.flashcard;
+    if (!fc) return;
+    setFlashcardPrefs({
+      shuffle: fc.shuffle,
+      autoplay: fc.autoplay,
+      hideMeaning: fc.hideMeaning,
+      filter: fc.filter,
+    });
+  }
+
+  function renderFlashcard() {
+    const fc = state.flashcard;
+    if (!fc) return;
+    const total = fc.order.length;
+    $("#fcTotal").textContent = String(total);
+    $("#fcIndex").textContent = String(total === 0 ? 0 : fc.index + 1);
+    $("#fcProgressFill").style.width = total === 0 ? "0%" : `${((fc.index + 1) / total) * 100}%`;
+
+    const stage = $("#fcStage");
+    clear(stage);
+
+    if (total === 0) {
+      const msg =
+        fc.filter === "bookmark"
+          ? "북마크한 단어가 없습니다. 카드 우상단의 ★ 버튼으로 추가하세요."
+          : fc.filter === "wrong"
+            ? "아직 자주 틀린 단어가 없습니다. 퀴즈를 더 풀어보세요."
+            : "표시할 단어가 없습니다.";
+      stage.appendChild(el("div", { class: "fc-empty", text: msg }));
+      $("#fcBookmarkBtn").setAttribute("aria-hidden", "true");
+      $("#fcBookmarkBtn").style.visibility = "hidden";
+      $("#fcPrevBtn").setAttribute("disabled", "");
+      $("#fcNextBtn").setAttribute("disabled", "");
+      return;
+    }
+
+    $("#fcBookmarkBtn").style.visibility = "visible";
+    $("#fcBookmarkBtn").removeAttribute("aria-hidden");
+    $("#fcPrevBtn").toggleAttribute("disabled", fc.index === 0);
+    $("#fcNextBtn").toggleAttribute("disabled", fc.index >= total - 1);
+
+    const w = fc.order[fc.index];
+    const card = buildFlashcardEl(w);
+    stage.appendChild(card);
+    attachSwipeHandlers(card);
+
+    // Bookmark button reflects current state.
+    const bmBtn = $("#fcBookmarkBtn");
+    const isBm = isBookmarked(w.id);
+    bmBtn.textContent = isBm ? "★" : "☆";
+    bmBtn.classList.toggle("active", isBm);
+    bmBtn.setAttribute("aria-pressed", isBm ? "true" : "false");
+    bmBtn.setAttribute("aria-label", isBm ? `${w.en} 북마크 해제` : `${w.en} 북마크`);
+
+    if (fc.autoplay) playTts(w.en);
+  }
+
+  function buildFlashcardEl(w) {
+    const card = el("div", { class: "fc-card" + (state.flashcard.hideMeaning ? " meaning-hidden" : "") });
+    card.addEventListener("click", (e) => {
+      // Tap-to-toggle, but ignore clicks on the TTS button.
+      if (e.target.closest(".tts-btn")) return;
+      state.flashcard.hideMeaning = !state.flashcard.hideMeaning;
+      $("#fcHideMeaning").checked = state.flashcard.hideMeaning;
+      persistFlashcardPrefs();
+      card.classList.toggle("meaning-hidden", state.flashcard.hideMeaning);
+    });
+
+    const enRow = el("div", { class: "fc-en" }, [
+      document.createTextNode(w.en),
+      buildTtsButton(w.en),
+    ]);
+    card.appendChild(enRow);
+    if (w.alt_en && w.alt_en.length) {
+      card.appendChild(el("div", { class: "fc-alt-en", text: w.alt_en.join(" · ") }));
+    }
+    card.appendChild(el("div", { class: "fc-divider" }));
+    card.appendChild(el("div", { class: "fc-ko", text: w.ko }));
+    if (w.alt_ko && w.alt_ko.length) {
+      card.appendChild(el("div", { class: "fc-alt-ko", text: w.alt_ko.join(" · ") }));
+    }
+    if (w.note) {
+      card.appendChild(el("div", { class: "fc-note", text: w.note }));
+    }
+    return card;
+  }
+
+  // ----- Navigation -----
+  function flashcardNext() {
+    const fc = state.flashcard;
+    if (!fc || fc.index >= fc.order.length - 1) return;
+    fc.index += 1;
+    renderFlashcard();
+  }
+  function flashcardPrev() {
+    const fc = state.flashcard;
+    if (!fc || fc.index <= 0) return;
+    fc.index -= 1;
+    renderFlashcard();
+  }
+  function flashcardClose() {
+    state.flashcard = null;
+    renderHome();
+    setRoute("home");
+  }
+
+  // ----- Touch swipe handling -----
+  let swipeStart = null; // { x, y, t }
+  function attachSwipeHandlers(card) {
+    const TAP_TOL = 8;
+    const SWIPE_THRESHOLD = 60;
+
+    card.addEventListener("touchstart", (e) => {
+      if (e.touches.length !== 1) return;
+      const t = e.touches[0];
+      swipeStart = { x: t.clientX, y: t.clientY, t: Date.now(), dragged: false };
+    }, { passive: true });
+
+    card.addEventListener("touchmove", (e) => {
+      if (!swipeStart || e.touches.length !== 1) return;
+      const t = e.touches[0];
+      const dx = t.clientX - swipeStart.x;
+      const dy = t.clientY - swipeStart.y;
+      if (!swipeStart.dragged && Math.abs(dx) > TAP_TOL) {
+        if (Math.abs(dx) > Math.abs(dy)) swipeStart.dragged = true;
+      }
+      if (swipeStart.dragged) {
+        card.classList.add("dragging");
+        card.style.transform = `translateX(${dx}px)`;
+        card.style.opacity = String(Math.max(0.3, 1 - Math.abs(dx) / 400));
+      }
+    }, { passive: true });
+
+    card.addEventListener("touchend", (e) => {
+      if (!swipeStart) return;
+      const dx = (e.changedTouches[0] || {}).clientX - swipeStart.x;
+      const wasDragged = swipeStart.dragged;
+      const startState = swipeStart;
+      swipeStart = null;
+      card.classList.remove("dragging");
+
+      if (!wasDragged) {
+        // Treat as a tap — toggle happens on click handler.
+        card.style.transform = "";
+        card.style.opacity = "";
+        return;
+      }
+      if (Math.abs(dx) >= SWIPE_THRESHOLD) {
+        // Animate out.
+        if (dx < 0) {
+          card.classList.add("swipe-out-left");
+          setTimeout(flashcardNext, 180);
+        } else {
+          card.classList.add("swipe-out-right");
+          setTimeout(flashcardPrev, 180);
+        }
+      } else {
+        // Snap back.
+        card.style.transition = "transform 0.18s ease, opacity 0.18s ease";
+        card.style.transform = "";
+        card.style.opacity = "";
+      }
+      // Prevent the implicit click from firing toggle after a swipe.
+      // (Touch-handlers already set dragged so click would still fire on some
+      //  browsers; we stop one synthetic click.)
+      if (wasDragged) suppressNextClick(card);
+    });
+  }
+  function suppressNextClick(node) {
+    const handler = (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      node.removeEventListener("click", handler, true);
+    };
+    node.addEventListener("click", handler, true);
+  }
+
+  function bindFlashcardControls() {
+    $("#fcCloseBtn").addEventListener("click", flashcardClose);
+    $("#fcPrevBtn").addEventListener("click", flashcardPrev);
+    $("#fcNextBtn").addEventListener("click", flashcardNext);
+    $("#fcBookmarkBtn").addEventListener("click", () => {
+      const fc = state.flashcard;
+      if (!fc || fc.order.length === 0) return;
+      const w = fc.order[fc.index];
+      toggleBookmark(w.id);
+      renderFlashcard();
+    });
+    $("#fcShuffle").addEventListener("change", (e) => {
+      state.flashcard.shuffle = e.target.checked;
+      persistFlashcardPrefs();
+      rebuildFlashcardOrder();
+      state.flashcard.index = 0;
+      renderFlashcard();
+    });
+    $("#fcAutoplay").addEventListener("change", (e) => {
+      state.flashcard.autoplay = e.target.checked;
+      persistFlashcardPrefs();
+    });
+    $("#fcHideMeaning").addEventListener("change", (e) => {
+      state.flashcard.hideMeaning = e.target.checked;
+      persistFlashcardPrefs();
+      renderFlashcard();
+    });
+    $("#fcFilter").addEventListener("change", (e) => {
+      state.flashcard.filter = e.target.value;
+      persistFlashcardPrefs();
+      state.flashcard.index = 0;
+      rebuildFlashcardOrder();
+      renderFlashcard();
+    });
+  }
+
   // ---------- History ----------
   function renderHistory() {
     const attempts = getAttempts();
@@ -1009,7 +1487,46 @@
       }
     });
 
+    // Mode tabs on home.
+    $$(".mode-tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        state.homeMode = tab.dataset.mode;
+        setHomeMode(state.homeMode);
+        renderHome();
+      });
+    });
+
+    bindFlashcardControls();
+
     document.addEventListener("keydown", (e) => {
+      // Flashcard keyboard nav.
+      if (state.currentRoute === "flashcard" && state.flashcard) {
+        if (e.key === "ArrowRight") { e.preventDefault(); flashcardNext(); return; }
+        if (e.key === "ArrowLeft") { e.preventDefault(); flashcardPrev(); return; }
+        if (e.key === " " || e.key === "Spacebar") {
+          e.preventDefault();
+          state.flashcard.hideMeaning = !state.flashcard.hideMeaning;
+          $("#fcHideMeaning").checked = state.flashcard.hideMeaning;
+          persistFlashcardPrefs();
+          renderFlashcard();
+          return;
+        }
+        if (e.key === "s" || e.key === "S") {
+          const fc = state.flashcard;
+          if (fc.order[fc.index]) playTts(fc.order[fc.index].en);
+          return;
+        }
+        if (e.key === "b" || e.key === "B") {
+          const fc = state.flashcard;
+          if (fc.order[fc.index]) {
+            toggleBookmark(fc.order[fc.index].id);
+            renderFlashcard();
+          }
+          return;
+        }
+        if (e.key === "Escape") { e.preventDefault(); flashcardClose(); return; }
+      }
+
       if (state.currentRoute !== "quiz" || !state.quiz) return;
       // Enter advances when "다음 →" button is visible.
       if (e.key === "Enter") {
@@ -1036,6 +1553,7 @@
       if (!confirm("진행 중인 퀴즈를 그만두면 결과가 저장되지 않습니다. 계속할까요?")) return;
     }
     state.quiz = null;
+    state.flashcard = null;
     renderHome();
     setRoute("home");
   }
@@ -1047,8 +1565,12 @@
   // ---------- Bootstrap ----------
   async function init() {
     state.selectedCount = getStoredCount();
+    state.homeMode = getHomeMode();
+    preloadVoices();
+    maybeShowInAppBanner();
     bindGlobalControls();
     setRoute("home");
+    renderModeTabs();
     renderCountPicker();
     const { loaded, errors } = await loadSubjects();
     if (loaded.length === 0) {

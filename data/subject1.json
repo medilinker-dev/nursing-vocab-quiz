@@ -1,7 +1,7 @@
 {
   "subjectId": "subject1",
   "subjectName": "소화계통",
-  "version": "2026-05-10",
+  "version": "2026-05-18",
   "words": [
     {
       "id": "s1-0001",
@@ -1115,6 +1115,357 @@
       "id": "s1-0181",
       "en": "barium enema",
       "ko": "바륨관장"
+    },
+    {
+      "id": "s1-0182",
+      "en": "AFP",
+      "ko": "알파태아단백질",
+      "alt_en": [
+        "alpha-fetoprotein"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0183",
+      "en": "ALP",
+      "ko": "알칼리성 인산분해효소",
+      "alt_en": [
+        "alkaline phosphatase"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0184",
+      "en": "ALT",
+      "ko": "알라닌 아미노전달효소",
+      "alt_en": [
+        "alanine aminotransferase",
+        "SGPT"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0185",
+      "en": "AST",
+      "ko": "아스파르테이트 아미노전달효소",
+      "alt_en": [
+        "aspartate aminotransferase",
+        "SGOT"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0186",
+      "en": "A/N/V/D/C",
+      "ko": "식욕부진/오심/구토/설사/변비",
+      "alt_en": [
+        "anorexia/nausea/vomit/diarrhea/constipation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0187",
+      "en": "BaE",
+      "ko": "바륨관장",
+      "alt_en": [
+        "barium enema"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0188",
+      "en": "CBD",
+      "ko": "총담관",
+      "alt_en": [
+        "common bile duct"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0189",
+      "en": "CT scan",
+      "ko": "컴퓨터단층촬영",
+      "alt_en": [
+        "computed tomography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0190",
+      "en": "EGD",
+      "ko": "식도위십이지장내시경술",
+      "alt_en": [
+        "esophagogastroduodenoscopy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0191",
+      "en": "ERCP",
+      "ko": "내시경역행췌담관조영",
+      "alt_en": [
+        "endoscopic retrograde cholangiopancreatography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0192",
+      "en": "FAP",
+      "ko": "가족성 선종성용종증",
+      "alt_en": [
+        "familial adenomatous polyposis"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0193",
+      "en": "GB",
+      "ko": "담낭",
+      "alt_en": [
+        "gallbladder"
+      ],
+      "alt_ko": [
+        "쓸개"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0194",
+      "en": "GERD",
+      "ko": "위식도역류병",
+      "alt_en": [
+        "gastroesophageal reflux disease"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0195",
+      "en": "GI",
+      "ko": "위장관의",
+      "alt_en": [
+        "gastrointestinal"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0196",
+      "en": "HAV",
+      "ko": "A형 간염바이러스",
+      "alt_en": [
+        "hepatitis A virus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0197",
+      "en": "HBV",
+      "ko": "B형 간염바이러스",
+      "alt_en": [
+        "hepatitis B virus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0198",
+      "en": "HCV",
+      "ko": "C형 간염바이러스",
+      "alt_en": [
+        "hepatitis C virus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0199",
+      "en": "IBD",
+      "ko": "염증장질환",
+      "alt_en": [
+        "inflammatory bowel disease"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0200",
+      "en": "IBS",
+      "ko": "과민대장증후군",
+      "alt_en": [
+        "irritable bowel syndrome"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0201",
+      "en": "IVC",
+      "ko": "정맥내담관조영",
+      "alt_en": [
+        "intravenous cholangiography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0202",
+      "en": "LFT",
+      "ko": "간기능검사",
+      "alt_en": [
+        "liver function test"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0203",
+      "en": "LLQ",
+      "ko": "좌하복부",
+      "alt_en": [
+        "left lower quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0204",
+      "en": "LUQ",
+      "ko": "좌상복부",
+      "alt_en": [
+        "left upper quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0205",
+      "en": "NG tube",
+      "ko": "코위관",
+      "alt_en": [
+        "nasogastric tube"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0206",
+      "en": "NPO",
+      "ko": "금식",
+      "alt_en": [
+        "nothing per os"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0207",
+      "en": "PCNA",
+      "ko": "피부경유침흡인생검",
+      "alt_en": [
+        "percutaneous needle aspiration biopsy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0208",
+      "en": "PEG",
+      "ko": "피부경유내시경위창냄술",
+      "alt_en": [
+        "percutaneous endoscopic gastrostomy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0209",
+      "en": "PEI",
+      "ko": "피부경유에탄올주사",
+      "alt_en": [
+        "percutaneous ethanol injection"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0210",
+      "en": "PPDS",
+      "ko": "날문보존췌십이지장절제",
+      "alt_en": [
+        "pylorus-preserving pancreaticoduodenectomy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0211",
+      "en": "PTBD",
+      "ko": "피부간경유담즙배액",
+      "alt_en": [
+        "percutaneous transhepatic biliary drainage"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0212",
+      "en": "PTC",
+      "ko": "피부간경유담관조영",
+      "alt_en": [
+        "percutaneous transhepatic cholangiography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0213",
+      "en": "RFA",
+      "ko": "고주파열치료",
+      "alt_en": [
+        "radiofrequency ablation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0214",
+      "en": "RLQ",
+      "ko": "우하복부",
+      "alt_en": [
+        "right lower quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0215",
+      "en": "RUQ",
+      "ko": "우상복부",
+      "alt_en": [
+        "right upper quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0216",
+      "en": "TACE",
+      "ko": "도관경유화학색전술",
+      "alt_en": [
+        "transcatheter arterial chemoembolization",
+        "transarterial chemoembolization"
+      ],
+      "alt_ko": [
+        "동맥경유화학색전술"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0217",
+      "en": "TACI",
+      "ko": "도관경유항암주입요법",
+      "alt_en": [
+        "transarterial chemoinfusion"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0218",
+      "en": "TPN",
+      "ko": "완전비경구영양",
+      "alt_en": [
+        "total parenteral nutrition"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s1-0219",
+      "en": "UGIS",
+      "ko": "상부위장관조영",
+      "alt_en": [
+        "upper gastrointestinal series"
+      ],
+      "note": "약어"
     }
   ]
 }

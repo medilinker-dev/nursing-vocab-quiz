@@ -1,0 +1,1450 @@
+{
+  "subjectId": "subject3",
+  "subjectName": "근골격계통",
+  "version": "2026-05-18",
+  "words": [
+    {
+      "id": "s3-0001",
+      "en": "osteocyte",
+      "ko": "골세포",
+      "alt_ko": [
+        "뼈세포"
+      ]
+    },
+    {
+      "id": "s3-0002",
+      "en": "osteoblast",
+      "ko": "골모세포",
+      "alt_ko": [
+        "뼈모세포"
+      ]
+    },
+    {
+      "id": "s3-0003",
+      "en": "osteoclast",
+      "ko": "파골세포",
+      "alt_ko": [
+        "뼈파괴세포"
+      ]
+    },
+    {
+      "id": "s3-0004",
+      "en": "chondrocyte",
+      "ko": "연골세포"
+    },
+    {
+      "id": "s3-0005",
+      "en": "chondroblast",
+      "ko": "연골모세포"
+    },
+    {
+      "id": "s3-0006",
+      "en": "periosteum",
+      "ko": "골막"
+    },
+    {
+      "id": "s3-0007",
+      "en": "compact bone",
+      "ko": "치밀뼈"
+    },
+    {
+      "id": "s3-0008",
+      "en": "cortical bone",
+      "ko": "겉질뼈"
+    },
+    {
+      "id": "s3-0009",
+      "en": "cancellous bone",
+      "ko": "해면뼈",
+      "alt_en": [
+        "spongy bone"
+      ],
+      "alt_ko": [
+        "해면골"
+      ]
+    },
+    {
+      "id": "s3-0010",
+      "en": "medullary cavity",
+      "ko": "골수공간",
+      "alt_ko": [
+        "골수강"
+      ]
+    },
+    {
+      "id": "s3-0011",
+      "en": "diaphysis",
+      "ko": "뼈몸통",
+      "alt_ko": [
+        "골간"
+      ]
+    },
+    {
+      "id": "s3-0012",
+      "en": "metaphysis",
+      "ko": "뼈몸통끝",
+      "alt_ko": [
+        "골간단"
+      ]
+    },
+    {
+      "id": "s3-0013",
+      "en": "epiphysis",
+      "ko": "뼈끝",
+      "alt_ko": [
+        "골단"
+      ]
+    },
+    {
+      "id": "s3-0014",
+      "en": "epiphyseal plate",
+      "ko": "뼈끝판",
+      "alt_ko": [
+        "골단판"
+      ]
+    },
+    {
+      "id": "s3-0015",
+      "en": "frontal bone",
+      "ko": "전두골",
+      "alt_ko": [
+        "이마뼈"
+      ]
+    },
+    {
+      "id": "s3-0016",
+      "en": "parietal bone",
+      "ko": "두정골",
+      "alt_ko": [
+        "마루뼈"
+      ]
+    },
+    {
+      "id": "s3-0017",
+      "en": "temporal bone",
+      "ko": "측두골",
+      "alt_ko": [
+        "관자뼈"
+      ]
+    },
+    {
+      "id": "s3-0018",
+      "en": "occipital bone",
+      "ko": "후두골",
+      "alt_ko": [
+        "뒤통수뼈"
+      ]
+    },
+    {
+      "id": "s3-0019",
+      "en": "sphenoid bone",
+      "ko": "나비뼈",
+      "alt_ko": [
+        "접형골"
+      ]
+    },
+    {
+      "id": "s3-0020",
+      "en": "ethmoid bone",
+      "ko": "벌집뼈",
+      "alt_ko": [
+        "사골"
+      ]
+    },
+    {
+      "id": "s3-0021",
+      "en": "nasal bone",
+      "ko": "코뼈",
+      "alt_ko": [
+        "비골"
+      ]
+    },
+    {
+      "id": "s3-0022",
+      "en": "lacrimal bone",
+      "ko": "눈물뼈",
+      "alt_ko": [
+        "누골"
+      ]
+    },
+    {
+      "id": "s3-0023",
+      "en": "zygomatic bone",
+      "ko": "광대뼈"
+    },
+    {
+      "id": "s3-0024",
+      "en": "maxillary bone",
+      "ko": "위턱뼈",
+      "alt_ko": [
+        "상악골"
+      ]
+    },
+    {
+      "id": "s3-0025",
+      "en": "mandible",
+      "ko": "아래턱뼈",
+      "alt_ko": [
+        "하악골"
+      ]
+    },
+    {
+      "id": "s3-0026",
+      "en": "vomer",
+      "ko": "보습뼈",
+      "alt_ko": [
+        "서골"
+      ]
+    },
+    {
+      "id": "s3-0027",
+      "en": "vertebral column",
+      "ko": "척주"
+    },
+    {
+      "id": "s3-0028",
+      "en": "cervical vertebra",
+      "ko": "목뼈",
+      "alt_ko": [
+        "경추"
+      ]
+    },
+    {
+      "id": "s3-0029",
+      "en": "thoracic vertebra",
+      "ko": "등뼈",
+      "alt_ko": [
+        "흉추"
+      ]
+    },
+    {
+      "id": "s3-0030",
+      "en": "lumbar vertebra",
+      "ko": "허리뼈",
+      "alt_ko": [
+        "요추"
+      ]
+    },
+    {
+      "id": "s3-0031",
+      "en": "sacrum",
+      "ko": "엉치뼈",
+      "alt_ko": [
+        "천골"
+      ]
+    },
+    {
+      "id": "s3-0032",
+      "en": "coccyx",
+      "ko": "꼬리뼈",
+      "alt_ko": [
+        "미추"
+      ]
+    },
+    {
+      "id": "s3-0033",
+      "en": "clavicle",
+      "ko": "빗장뼈",
+      "alt_ko": [
+        "쇄골"
+      ]
+    },
+    {
+      "id": "s3-0034",
+      "en": "scapular",
+      "ko": "어깨뼈",
+      "alt_ko": [
+        "견갑골"
+      ]
+    },
+    {
+      "id": "s3-0035",
+      "en": "acromion",
+      "ko": "어깨봉우리",
+      "alt_ko": [
+        "견봉"
+      ]
+    },
+    {
+      "id": "s3-0036",
+      "en": "sternum",
+      "ko": "복장뼈",
+      "alt_ko": [
+        "흉골"
+      ]
+    },
+    {
+      "id": "s3-0037",
+      "en": "ribs",
+      "ko": "갈비뼈",
+      "alt_ko": [
+        "늑골"
+      ]
+    },
+    {
+      "id": "s3-0038",
+      "en": "humerus",
+      "ko": "위팔뼈"
+    },
+    {
+      "id": "s3-0039",
+      "en": "carpals",
+      "ko": "손목뼈",
+      "alt_ko": [
+        "수근골"
+      ]
+    },
+    {
+      "id": "s3-0040",
+      "en": "radius",
+      "ko": "노뼈"
+    },
+    {
+      "id": "s3-0041",
+      "en": "metacarpals",
+      "ko": "손허리뼈",
+      "alt_ko": [
+        "중수골"
+      ]
+    },
+    {
+      "id": "s3-0042",
+      "en": "ulna",
+      "ko": "자뼈"
+    },
+    {
+      "id": "s3-0043",
+      "en": "phalanx",
+      "ko": "손가락뼈",
+      "alt_ko": [
+        "마디뼈"
+      ]
+    },
+    {
+      "id": "s3-0044",
+      "en": "ilium",
+      "ko": "엉덩뼈",
+      "alt_ko": [
+        "장골"
+      ]
+    },
+    {
+      "id": "s3-0045",
+      "en": "ischium",
+      "ko": "궁둥뼈",
+      "alt_ko": [
+        "좌골"
+      ]
+    },
+    {
+      "id": "s3-0046",
+      "en": "pubis",
+      "ko": "두덩뼈",
+      "alt_ko": [
+        "치골"
+      ]
+    },
+    {
+      "id": "s3-0047",
+      "en": "femur",
+      "ko": "넓적다리뼈",
+      "alt_en": [
+        "thigh bone"
+      ],
+      "alt_ko": [
+        "넙다리뼈",
+        "대퇴골"
+      ]
+    },
+    {
+      "id": "s3-0048",
+      "en": "patella",
+      "ko": "무릎뼈",
+      "alt_en": [
+        "knee bone"
+      ],
+      "alt_ko": [
+        "슬개골"
+      ]
+    },
+    {
+      "id": "s3-0049",
+      "en": "tibia",
+      "ko": "정강뼈",
+      "alt_en": [
+        "shin bone"
+      ],
+      "alt_ko": [
+        "경골"
+      ]
+    },
+    {
+      "id": "s3-0050",
+      "en": "fibula",
+      "ko": "종아리뼈",
+      "alt_en": [
+        "calf bone"
+      ],
+      "alt_ko": [
+        "비골"
+      ]
+    },
+    {
+      "id": "s3-0051",
+      "en": "tarsals bone",
+      "ko": "발목뼈",
+      "alt_en": [
+        "ankle bone"
+      ],
+      "alt_ko": [
+        "족근골"
+      ]
+    },
+    {
+      "id": "s3-0052",
+      "en": "metatarsal bone",
+      "ko": "발허리뼈",
+      "alt_ko": [
+        "중족골"
+      ]
+    },
+    {
+      "id": "s3-0053",
+      "en": "phalanx of the toes",
+      "ko": "발가락뼈",
+      "alt_ko": [
+        "지절골"
+      ]
+    },
+    {
+      "id": "s3-0054",
+      "en": "origin of the muscle",
+      "ko": "근육 기시부"
+    },
+    {
+      "id": "s3-0055",
+      "en": "insertion of the muscle",
+      "ko": "근육 정지부"
+    },
+    {
+      "id": "s3-0056",
+      "en": "tendon",
+      "ko": "힘줄"
+    },
+    {
+      "id": "s3-0057",
+      "en": "ligament",
+      "ko": "인대"
+    },
+    {
+      "id": "s3-0058",
+      "en": "articular cartilage",
+      "ko": "관절연골"
+    },
+    {
+      "id": "s3-0059",
+      "en": "synovial membrane",
+      "ko": "활막",
+      "note": "윤"
+    },
+    {
+      "id": "s3-0060",
+      "en": "synovial fluid",
+      "ko": "활액",
+      "note": "윤"
+    },
+    {
+      "id": "s3-0061",
+      "en": "bursa",
+      "ko": "윤활주머니",
+      "alt_ko": [
+        "윤활낭"
+      ]
+    },
+    {
+      "id": "s3-0062",
+      "en": "aponeurosiss",
+      "ko": "널힘줄",
+      "alt_ko": [
+        "건막"
+      ]
+    },
+    {
+      "id": "s3-0063",
+      "en": "fascia",
+      "ko": "근막"
+    },
+    {
+      "id": "s3-0064",
+      "en": "lumbago",
+      "ko": "허리통증",
+      "alt_en": [
+        "low back pain",
+        "LBP"
+      ]
+    },
+    {
+      "id": "s3-0065",
+      "en": "ostealgia",
+      "ko": "뼈통증",
+      "alt_en": [
+        "osteodynia"
+      ]
+    },
+    {
+      "id": "s3-0066",
+      "en": "crepitation",
+      "ko": "비빔소리"
+    },
+    {
+      "id": "s3-0067",
+      "en": "sequestrum",
+      "ko": "부골",
+      "alt_ko": [
+        "분리죽은뼈",
+        "죽은뼛조각"
+      ]
+    },
+    {
+      "id": "s3-0068",
+      "en": "phantom limb pain",
+      "ko": "환상지통(증)"
+    },
+    {
+      "id": "s3-0069",
+      "en": "arthralgia",
+      "ko": "관절통"
+    },
+    {
+      "id": "s3-0070",
+      "en": "ankylosis",
+      "ko": "관절강직"
+    },
+    {
+      "id": "s3-0071",
+      "en": "hemarthrosis",
+      "ko": "혈관절증"
+    },
+    {
+      "id": "s3-0072",
+      "en": "hydrarthrosis",
+      "ko": "물관절증",
+      "alt_ko": [
+        "관절수종"
+      ]
+    },
+    {
+      "id": "s3-0073",
+      "en": "spasm",
+      "ko": "연축"
+    },
+    {
+      "id": "s3-0074",
+      "en": "contracture",
+      "ko": "구축",
+      "alt_ko": [
+        "오그라듦"
+      ]
+    },
+    {
+      "id": "s3-0075",
+      "en": "tremor",
+      "ko": "떨림"
+    },
+    {
+      "id": "s3-0076",
+      "en": "claudication",
+      "ko": "절뚝거림",
+      "alt_ko": [
+        "파행"
+      ]
+    },
+    {
+      "id": "s3-0077",
+      "en": "osteomyelitis",
+      "ko": "골수염"
+    },
+    {
+      "id": "s3-0078",
+      "en": "avascular necrosis of the femoral head",
+      "ko": "대퇴골두 무혈성괴사",
+      "alt_en": [
+        "AVN"
+      ]
+    },
+    {
+      "id": "s3-0079",
+      "en": "ankylosing spondylitis",
+      "ko": "강직척추염",
+      "alt_en": [
+        "Bamboo spine"
+      ],
+      "alt_ko": [
+        "대나무 척추"
+      ]
+    },
+    {
+      "id": "s3-0080",
+      "en": "osteoporosis",
+      "ko": "골다공증"
+    },
+    {
+      "id": "s3-0081",
+      "en": "osteomalacia",
+      "ko": "골연화증"
+    },
+    {
+      "id": "s3-0082",
+      "en": "rickets",
+      "ko": "구루병"
+    },
+    {
+      "id": "s3-0083",
+      "en": "osteosclerosis",
+      "ko": "골경화증"
+    },
+    {
+      "id": "s3-0084",
+      "en": "scurvy",
+      "ko": "괴혈병"
+    },
+    {
+      "id": "s3-0085",
+      "en": "exostosis",
+      "ko": "뼈돌출(증)",
+      "alt_ko": [
+        "외골증"
+      ]
+    },
+    {
+      "id": "s3-0086",
+      "en": "osteochondroma",
+      "ko": "골연골종"
+    },
+    {
+      "id": "s3-0087",
+      "en": "osteosarcoma",
+      "ko": "골육종",
+      "alt_en": [
+        "osteogenic sarcoma"
+      ]
+    },
+    {
+      "id": "s3-0088",
+      "en": "multiple myeloma",
+      "ko": "다발골수종"
+    },
+    {
+      "id": "s3-0089",
+      "en": "plasma cell myeloma",
+      "ko": "형질세포골수종"
+    },
+    {
+      "id": "s3-0090",
+      "en": "Ewing sarcoma",
+      "ko": "유잉육종",
+      "alt_en": [
+        "Ewing tumor"
+      ]
+    },
+    {
+      "id": "s3-0091",
+      "en": "chordoma",
+      "ko": "척삭종"
+    },
+    {
+      "id": "s3-0092",
+      "en": "achondroplasia",
+      "ko": "연골무형성증"
+    },
+    {
+      "id": "s3-0093",
+      "en": "spondylolysis",
+      "ko": "척추분리증"
+    },
+    {
+      "id": "s3-0094",
+      "en": "spondylolisthesis",
+      "ko": "척추전방전위증"
+    },
+    {
+      "id": "s3-0095",
+      "en": "spinal stenosis",
+      "ko": "척추관협착증"
+    },
+    {
+      "id": "s3-0096",
+      "en": "kyphosis",
+      "ko": "척주후만증",
+      "alt_en": [
+        "hunchback",
+        "humpback"
+      ]
+    },
+    {
+      "id": "s3-0097",
+      "en": "scoliosis",
+      "ko": "척주측만증"
+    },
+    {
+      "id": "s3-0098",
+      "en": "Lordosis",
+      "ko": "척주전만증",
+      "alt_en": [
+        "hollowback",
+        "swayback"
+      ]
+    },
+    {
+      "id": "s3-0099",
+      "en": "spina bifida",
+      "ko": "이분척추",
+      "alt_en": [
+        "rachischisis"
+      ],
+      "alt_ko": [
+        "척추갈림증"
+      ]
+    },
+    {
+      "id": "s3-0100",
+      "en": "talipes",
+      "ko": "휜발",
+      "alt_ko": [
+        "만곡족"
+      ]
+    },
+    {
+      "id": "s3-0101",
+      "en": "talipes varus",
+      "ko": "발꿈치안쪽휜발",
+      "alt_ko": [
+        "내반족"
+      ]
+    },
+    {
+      "id": "s3-0102",
+      "en": "talipes valgus",
+      "ko": "발꿈치가쪽휜발",
+      "alt_ko": [
+        "외반족"
+      ]
+    },
+    {
+      "id": "s3-0103",
+      "en": "talipes equinus",
+      "ko": "발꿈치들린휜발",
+      "alt_ko": [
+        "첨족"
+      ]
+    },
+    {
+      "id": "s3-0104",
+      "en": "flat foot",
+      "ko": "평발"
+    },
+    {
+      "id": "s3-0105",
+      "en": "genu valgum",
+      "ko": "가쪽휜무릎",
+      "alt_en": [
+        "knock knee"
+      ],
+      "alt_ko": [
+        "외반슬"
+      ]
+    },
+    {
+      "id": "s3-0106",
+      "en": "genu varum",
+      "ko": "안쪽휜무릎",
+      "alt_en": [
+        "bow leg"
+      ],
+      "alt_ko": [
+        "내반슬"
+      ]
+    },
+    {
+      "id": "s3-0107",
+      "en": "hallux valgus",
+      "ko": "엄지발가락가쪽휨",
+      "alt_ko": [
+        "무지외반"
+      ]
+    },
+    {
+      "id": "s3-0108",
+      "en": "hallux varus",
+      "ko": "엄지발가락안쪽휨",
+      "alt_ko": [
+        "무지내반"
+      ]
+    },
+    {
+      "id": "s3-0109",
+      "en": "syndactyly",
+      "ko": "손발가락붙음증",
+      "alt_ko": [
+        "합지증"
+      ]
+    },
+    {
+      "id": "s3-0110",
+      "en": "polydactyly",
+      "ko": "가락과다증",
+      "alt_ko": [
+        "다지증"
+      ]
+    },
+    {
+      "id": "s3-0111",
+      "en": "fracture",
+      "ko": "골절",
+      "alt_en": [
+        "Fx"
+      ]
+    },
+    {
+      "id": "s3-0112",
+      "en": "Colles fracture",
+      "ko": "콜리스골절"
+    },
+    {
+      "id": "s3-0113",
+      "en": "Pott fracture",
+      "ko": "포트골절"
+    },
+    {
+      "id": "s3-0114",
+      "en": "osteoarthritis",
+      "ko": "골관절염"
+    },
+    {
+      "id": "s3-0115",
+      "en": "degenerative arthritis",
+      "ko": "퇴행관절염"
+    },
+    {
+      "id": "s3-0116",
+      "en": "gouty arthritis",
+      "ko": "통풍관절염"
+    },
+    {
+      "id": "s3-0117",
+      "en": "rheumatoid arthritis",
+      "ko": "류마티스관절염"
+    },
+    {
+      "id": "s3-0118",
+      "en": "bunion",
+      "ko": "엄지건막류"
+    },
+    {
+      "id": "s3-0119",
+      "en": "adhesive capsulitis",
+      "ko": "유착관절낭염",
+      "alt_en": [
+        "frozen shoulder"
+      ],
+      "alt_ko": [
+        "굳은어깨",
+        "동결어깨",
+        "오십견"
+      ]
+    },
+    {
+      "id": "s3-0120",
+      "en": "carpal tunnel syndrome",
+      "ko": "손목굴증후군",
+      "alt_en": [
+        "CTS"
+      ]
+    },
+    {
+      "id": "s3-0121",
+      "en": "herniated intervertebral disk",
+      "ko": "탈출추간판",
+      "alt_en": [
+        "HIVD"
+      ]
+    },
+    {
+      "id": "s3-0122",
+      "en": "sprain",
+      "ko": "삠",
+      "alt_ko": [
+        "염좌"
+      ]
+    },
+    {
+      "id": "s3-0123",
+      "en": "strain",
+      "ko": "긴장",
+      "alt_ko": [
+        "과도긴장"
+      ]
+    },
+    {
+      "id": "s3-0124",
+      "en": "dislocation",
+      "ko": "탈구",
+      "alt_ko": [
+        "어긋남",
+        "전위",
+        "이탈"
+      ]
+    },
+    {
+      "id": "s3-0125",
+      "en": "muscular dystrophy",
+      "ko": "근디스트로피"
+    },
+    {
+      "id": "s3-0126",
+      "en": "muscular atrophy",
+      "ko": "근위축"
+    },
+    {
+      "id": "s3-0127",
+      "en": "amyotrophic lateral sclerosis",
+      "ko": "근위축측삭경화증",
+      "alt_en": [
+        "Lou Gehrig disease"
+      ]
+    },
+    {
+      "id": "s3-0128",
+      "en": "myasthenia gravis",
+      "ko": "중증근무력증",
+      "alt_en": [
+        "MG"
+      ]
+    },
+    {
+      "id": "s3-0129",
+      "en": "torticollis",
+      "ko": "기운목",
+      "alt_en": [
+        "wryneck"
+      ],
+      "alt_ko": [
+        "사경"
+      ]
+    },
+    {
+      "id": "s3-0130",
+      "en": "cervical dystonia",
+      "ko": "경부 근긴장이상증"
+    },
+    {
+      "id": "s3-0131",
+      "en": "plantar fasciitis",
+      "ko": "족저근막염"
+    },
+    {
+      "id": "s3-0132",
+      "en": "leiomyoma",
+      "ko": "평활근종"
+    },
+    {
+      "id": "s3-0133",
+      "en": "leiomysarcoma",
+      "ko": "평활근육종"
+    },
+    {
+      "id": "s3-0134",
+      "en": "rhabdomyoma",
+      "ko": "횡문근종"
+    },
+    {
+      "id": "s3-0135",
+      "en": "rhabdomyosarcoma",
+      "ko": "횡문근육종"
+    },
+    {
+      "id": "s3-0136",
+      "en": "lipoma",
+      "ko": "지방종"
+    },
+    {
+      "id": "s3-0137",
+      "en": "liposarcoma",
+      "ko": "지방육종"
+    },
+    {
+      "id": "s3-0138",
+      "en": "amputation",
+      "ko": "절단"
+    },
+    {
+      "id": "s3-0139",
+      "en": "bone graft",
+      "ko": "뼈이식"
+    },
+    {
+      "id": "s3-0140",
+      "en": "chondrotomy",
+      "ko": "연골절개"
+    },
+    {
+      "id": "s3-0141",
+      "en": "chondrectomy",
+      "ko": "연골절제"
+    },
+    {
+      "id": "s3-0142",
+      "en": "craniotomy",
+      "ko": "머리뼈절개",
+      "alt_ko": [
+        "개두"
+      ]
+    },
+    {
+      "id": "s3-0143",
+      "en": "ostectomy",
+      "ko": "골절제",
+      "alt_ko": [
+        "뼈절제"
+      ]
+    },
+    {
+      "id": "s3-0144",
+      "en": "osteoclasis",
+      "ko": "외과골절술"
+    },
+    {
+      "id": "s3-0145",
+      "en": "sequestrectomy",
+      "ko": "죽은뼈절제",
+      "alt_ko": [
+        "부골절제"
+      ]
+    },
+    {
+      "id": "s3-0146",
+      "en": "closed reduction of fracture",
+      "ko": "폐쇄정복",
+      "alt_ko": [
+        "비개방정복"
+      ],
+      "note": "C/R"
+    },
+    {
+      "id": "s3-0147",
+      "en": "open reduction of fracture",
+      "ko": "개방정복",
+      "note": "O/R"
+    },
+    {
+      "id": "s3-0148",
+      "en": "discectomy",
+      "ko": "추간판절제",
+      "alt_en": [
+        "diskectomy"
+      ]
+    },
+    {
+      "id": "s3-0149",
+      "en": "laminectomy",
+      "ko": "척추후궁절제"
+    },
+    {
+      "id": "s3-0150",
+      "en": "arthresis",
+      "ko": "관절천자",
+      "alt_en": [
+        "arthrocentesis"
+      ]
+    },
+    {
+      "id": "s3-0151",
+      "en": "arthrodesis",
+      "ko": "관절유합술"
+    },
+    {
+      "id": "s3-0152",
+      "en": "arthroplasty",
+      "ko": "관절형성"
+    },
+    {
+      "id": "s3-0153",
+      "en": "arthrotomy",
+      "ko": "관절절개"
+    },
+    {
+      "id": "s3-0154",
+      "en": "arthrectomy",
+      "ko": "관절성형"
+    },
+    {
+      "id": "s3-0155",
+      "en": "arthroscopy",
+      "ko": "관절내시경술"
+    },
+    {
+      "id": "s3-0156",
+      "en": "bunionectomy",
+      "ko": "엄지건막류절제"
+    },
+    {
+      "id": "s3-0157",
+      "en": "tenorrhaphy",
+      "ko": "힘줄봉합"
+    },
+    {
+      "id": "s3-0158",
+      "en": "fasciectomy",
+      "ko": "근막절개"
+    },
+    {
+      "id": "s3-0159",
+      "en": "myotomy",
+      "ko": "근(육)절개"
+    },
+    {
+      "id": "s3-0160",
+      "en": "myorrhaphy",
+      "ko": "근(육)봉합"
+    },
+    {
+      "id": "s3-0161",
+      "en": "myoplasty",
+      "ko": "근성형"
+    },
+    {
+      "id": "s3-0162",
+      "en": "AchR",
+      "ko": "아세틸콜린 수용체",
+      "alt_en": [
+        "acetylcholine receptor"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0163",
+      "en": "AKA",
+      "ko": "무릎위 절단",
+      "alt_en": [
+        "above knee amputation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0164",
+      "en": "ALS",
+      "ko": "근위축측삭경화증",
+      "alt_en": [
+        "amyotrophic lateral sclerosis"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0165",
+      "en": "AVN",
+      "ko": "무혈성괴사",
+      "alt_en": [
+        "avascular necrosis"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0166",
+      "en": "BMD",
+      "ko": "골무기질밀도측정",
+      "alt_en": [
+        "bone mineral densitometry"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0167",
+      "en": "BG",
+      "ko": "골이식",
+      "alt_en": [
+        "bone graft"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0168",
+      "en": "BKA",
+      "ko": "무릎아래 절단",
+      "alt_en": [
+        "below knee amputation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0169",
+      "en": "BM",
+      "ko": "골수",
+      "alt_en": [
+        "bone marrow"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0170",
+      "en": "C1, C2",
+      "ko": "제1·제2 목뼈",
+      "alt_en": [
+        "cervical vertebrae"
+      ],
+      "alt_ko": [
+        "경추"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0171",
+      "en": "C/R c̄ EF",
+      "ko": "외부고정을 동반한 비관혈적정복",
+      "alt_en": [
+        "closed reduction with external fixation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0172",
+      "en": "C/R c̄ IF",
+      "ko": "내부고정을 동반한 비관혈적정복",
+      "alt_en": [
+        "closed reduction with internal fixation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0173",
+      "en": "CTS",
+      "ko": "손목굴증후군",
+      "alt_en": [
+        "carpal tunnel syndrome"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0174",
+      "en": "DJD",
+      "ko": "퇴행관절질환",
+      "alt_en": [
+        "degenerative joint disease"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0175",
+      "en": "DTR",
+      "ko": "심부건반사",
+      "alt_en": [
+        "deep tendon reflex"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0176",
+      "en": "EMG",
+      "ko": "근전도",
+      "alt_en": [
+        "electromyography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0177",
+      "en": "ESR",
+      "ko": "적혈구침강률",
+      "alt_en": [
+        "erythrocyte sedimentation rate"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0178",
+      "en": "Fx.",
+      "ko": "골절",
+      "alt_en": [
+        "fracture"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0179",
+      "en": "HIVD",
+      "ko": "탈출추간판",
+      "alt_en": [
+        "herniated intervertebral disc"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0180",
+      "en": "HLD",
+      "ko": "탈출요추간판",
+      "alt_en": [
+        "herniated lumbar disk"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0181",
+      "en": "HNP",
+      "ko": "탈출수핵",
+      "alt_en": [
+        "herniated nucleus pulposus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0182",
+      "en": "ICS",
+      "ko": "갈비사이공간",
+      "alt_en": [
+        "intercostal space"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0183",
+      "en": "KJ",
+      "ko": "무릎반사",
+      "alt_en": [
+        "knee jerk"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0184",
+      "en": "L1, L2",
+      "ko": "제1·제2 허리뼈",
+      "alt_en": [
+        "lumbar vertebra"
+      ],
+      "alt_ko": [
+        "요추"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0185",
+      "en": "LBP",
+      "ko": "허리통증",
+      "alt_en": [
+        "low back pain"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0186",
+      "en": "NSAIDs",
+      "ko": "비스테로이드소염제",
+      "alt_en": [
+        "nonsteroidal antiinflammatory drugs"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0187",
+      "en": "NCV",
+      "ko": "신경전도속도",
+      "alt_en": [
+        "nerve conduction velocity"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0188",
+      "en": "O/R c̄ IF",
+      "ko": "내부고정을 동반한 관혈적정복",
+      "alt_en": [
+        "open reduction with internal fixation"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0189",
+      "en": "OS",
+      "ko": "정형외과",
+      "alt_en": [
+        "orthopedic surgery",
+        "orthopedics"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0190",
+      "en": "RA",
+      "ko": "류마티스관절염",
+      "alt_en": [
+        "rheumatoid arthritis"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0191",
+      "en": "RF",
+      "ko": "류마티스인자",
+      "alt_en": [
+        "rheumatoid factor"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0192",
+      "en": "ROM",
+      "ko": "운동범위",
+      "alt_en": [
+        "range of motion"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0193",
+      "en": "SLR",
+      "ko": "펴다리올림검사",
+      "alt_en": [
+        "straight leg raising test"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0194",
+      "en": "T1, T2",
+      "ko": "제1·제2 등뼈",
+      "alt_en": [
+        "thoracic vertebra"
+      ],
+      "alt_ko": [
+        "흉추"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0195",
+      "en": "THRA",
+      "ko": "전체엉덩관절치환",
+      "alt_en": [
+        "total hip replacement arthroplasty"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0196",
+      "en": "TKRA",
+      "ko": "전체무릎관절치환",
+      "alt_en": [
+        "total knee replacement arthroplasty"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s3-0197",
+      "en": "WBBS",
+      "ko": "전신골스캔",
+      "alt_en": [
+        "whole body bone scan"
+      ],
+      "note": "약어"
+    }
+  ]
+}

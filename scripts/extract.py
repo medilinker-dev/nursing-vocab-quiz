@@ -3,8 +3,7 @@
 Usage:
     python3 scripts/extract.py
 
-Reads "04 소화계통.pdf" and "08 신경계통.pdf" from the project root and
-writes data/subject1.json and data/subject2.json.
+Reads the source PDFs from the project root and writes data/subject{1,2,3}.json.
 
 Heuristics:
 - Bullets begin with "•" (sometimes "·").
@@ -12,6 +11,8 @@ Heuristics:
   by commas, possibly followed by another english/korean pair (a second word
   packed onto the same bullet line).
 - Multi-line bullets are merged until the next bullet starts.
+- Abbreviation ("약어") sections are image-only in some PDFs; those entries are
+  transcribed into EXTRA_ABBREVIATIONS and merged after bullet extraction.
 """
 
 from __future__ import annotations
@@ -41,11 +42,152 @@ SOURCES = [
         "subjectName": "신경계통",
         "prefix": "s2",
     },
+    {
+        "pdf": ROOT / "09 근골격계통.pdf",
+        "out": ROOT / "data" / "subject3.json",
+        "subjectId": "subject3",
+        "subjectName": "근골격계통",
+        "prefix": "s3",
+    },
 ]
 
 HANGUL_RE = re.compile(r"[가-힣ㄱ-ㆎ]")
 LATIN_RE = re.compile(r"[A-Za-z]")
 BULLET_CHARS = "•·"
+
+# Abbreviation ("약어") sections of some PDFs are embedded as images, so plain
+# text extraction misses them. They are transcribed here by subject and merged
+# into the output after the bullet extraction. Each entry:
+#   (abbreviation, [full English form(s)], Korean, [Korean alternatives])
+EXTRA_ABBREVIATIONS = {
+    # 04 소화계통.pdf — pages 43~44 ("8. 약어")
+    "subject1": [
+        ("AFP", ["alpha-fetoprotein"], "알파태아단백질", []),
+        ("ALP", ["alkaline phosphatase"], "알칼리성 인산분해효소", []),
+        ("ALT", ["alanine aminotransferase", "SGPT"], "알라닌 아미노전달효소", []),
+        ("AST", ["aspartate aminotransferase", "SGOT"], "아스파르테이트 아미노전달효소", []),
+        ("A/N/V/D/C", ["anorexia/nausea/vomit/diarrhea/constipation"],
+         "식욕부진/오심/구토/설사/변비", []),
+        ("BaE", ["barium enema"], "바륨관장", []),
+        ("CBD", ["common bile duct"], "총담관", []),
+        ("CT scan", ["computed tomography"], "컴퓨터단층촬영", []),
+        ("EGD", ["esophagogastroduodenoscopy"], "식도위십이지장내시경술", []),
+        ("ERCP", ["endoscopic retrograde cholangiopancreatography"],
+         "내시경역행췌담관조영", []),
+        ("FAP", ["familial adenomatous polyposis"], "가족성 선종성용종증", []),
+        ("GB", ["gallbladder"], "담낭", ["쓸개"]),
+        ("GERD", ["gastroesophageal reflux disease"], "위식도역류병", []),
+        ("GI", ["gastrointestinal"], "위장관의", []),
+        ("HAV", ["hepatitis A virus"], "A형 간염바이러스", []),
+        ("HBV", ["hepatitis B virus"], "B형 간염바이러스", []),
+        ("HCV", ["hepatitis C virus"], "C형 간염바이러스", []),
+        ("IBD", ["inflammatory bowel disease"], "염증장질환", []),
+        ("IBS", ["irritable bowel syndrome"], "과민대장증후군", []),
+        ("IVC", ["intravenous cholangiography"], "정맥내담관조영", []),
+        ("LFT", ["liver function test"], "간기능검사", []),
+        ("LLQ", ["left lower quadrant"], "좌하복부", []),
+        ("LUQ", ["left upper quadrant"], "좌상복부", []),
+        ("NG tube", ["nasogastric tube"], "코위관", []),
+        ("NPO", ["nothing per os"], "금식", []),
+        ("PCNA", ["percutaneous needle aspiration biopsy"], "피부경유침흡인생검", []),
+        ("PEG", ["percutaneous endoscopic gastrostomy"], "피부경유내시경위창냄술", []),
+        ("PEI", ["percutaneous ethanol injection"], "피부경유에탄올주사", []),
+        ("PPDS", ["pylorus-preserving pancreaticoduodenectomy"],
+         "날문보존췌십이지장절제", []),
+        ("PTBD", ["percutaneous transhepatic biliary drainage"],
+         "피부간경유담즙배액", []),
+        ("PTC", ["percutaneous transhepatic cholangiography"],
+         "피부간경유담관조영", []),
+        ("RFA", ["radiofrequency ablation"], "고주파열치료", []),
+        ("RLQ", ["right lower quadrant"], "우하복부", []),
+        ("RUQ", ["right upper quadrant"], "우상복부", []),
+        ("TACE", ["transcatheter arterial chemoembolization",
+                  "transarterial chemoembolization"],
+         "도관경유화학색전술", ["동맥경유화학색전술"]),
+        ("TACI", ["transarterial chemoinfusion"], "도관경유항암주입요법", []),
+        ("TPN", ["total parenteral nutrition"], "완전비경구영양", []),
+        ("UGIS", ["upper gastrointestinal series"], "상부위장관조영", []),
+    ],
+    # 08 신경계통.pdf — pages 33~34 ("8. 약어")
+    "subject2": [
+        ("AD", ["Alzheimer disease", "dementia"], "알츠하이머병", ["치매"]),
+        ("AIDP", ["acute inflammatory demyelinating polyneuropathy"],
+         "급성염증탈수초다발성신경병증", []),
+        ("ALS", ["amyotrophic lateral sclerosis", "acute lateral sclerosis"],
+         "근위축측삭경화증", ["급성측삭경화증"]),
+        ("ANS", ["autonomic nervous system"], "자율신경계", []),
+        ("CNS", ["central nervous system"], "중추신경계", []),
+        ("CP", ["cerebral palsy"], "뇌성마비", []),
+        ("CSF", ["cerebrospinal fluid"], "뇌척수액", []),
+        ("CVA", ["cerebrovascular accident"], "뇌졸중", []),
+        ("CVD", ["cerebrovascular disease"], "뇌혈관질환", []),
+        ("DBS", ["deep brain stimulation"], "깊은뇌자극", ["심부뇌자극"]),
+        ("DTR", ["deep tendon reflex"], "심부건반사", []),
+        ("EDH", ["epidural hematoma"], "경막외혈종", ["경막바깥혈종"]),
+        ("EEG", ["electroencephalography"], "뇌파검사", []),
+        ("EST", ["electroconvulsive therapy"], "전기경련요법", []),
+        ("GCS", ["Glasgow Coma Scale"], "글래스고혼수척도", []),
+        ("HIVD", ["herniated intervertebral disk"], "탈출추간판", []),
+        ("HNP", ["herniated nucleus pulposus"], "탈출수핵원반", []),
+        ("ICP", ["intracranial pressure"], "두개내압", []),
+        ("KJ", ["knee jerk"], "무릎반사", []),
+        ("LP", ["lumbar puncture"], "요추천자", []),
+        ("MRI", ["magnetic resonance imaging"], "자기공명영상", []),
+        ("MS", ["multiple sclerosis"], "다발성경화증", []),
+        ("NCV", ["nerve conduction velocity"], "신경전도속도", []),
+        ("NICU", ["neurosurgical intensive care unit"], "신경외과집중치료실", []),
+        ("NRS", ["numeric rating scale"], "수치통증척도", []),
+        ("OBS", ["organic brain syndrome"], "기질성뇌증후군", []),
+        ("PNS", ["peripheral nervous system"], "말초신경계", []),
+        ("PEG", ["pneumoencephalography"], "공기뇌조영", []),
+        ("SDH", ["subarachnoid hemorrhage"], "거미막밑출혈", ["지주막하출혈"]),
+        ("TIA", ["transient ischemic attack"], "일과성허혈발작", []),
+        ("VAS", ["visual analogue scale"], "시각통증등급", []),
+        ("VP shunt", ["ventriculoperitoneal shunt"], "뇌실복막강션트", []),
+    ],
+    # 09 근골격계통.pdf — pages 44~45 ("7. 약어")
+    "subject3": [
+        ("AchR", ["acetylcholine receptor"], "아세틸콜린 수용체", []),
+        ("AKA", ["above knee amputation"], "무릎위 절단", []),
+        ("ALS", ["amyotrophic lateral sclerosis"], "근위축측삭경화증", []),
+        ("AVN", ["avascular necrosis"], "무혈성괴사", []),
+        ("BMD", ["bone mineral densitometry"], "골무기질밀도측정", []),
+        ("BG", ["bone graft"], "골이식", []),
+        ("BKA", ["below knee amputation"], "무릎아래 절단", []),
+        ("BM", ["bone marrow"], "골수", []),
+        ("C1, C2", ["cervical vertebrae"], "제1·제2 목뼈", ["경추"]),
+        ("C/R c̄ EF", ["closed reduction with external fixation"],
+         "외부고정을 동반한 비관혈적정복", []),
+        ("C/R c̄ IF", ["closed reduction with internal fixation"],
+         "내부고정을 동반한 비관혈적정복", []),
+        ("CTS", ["carpal tunnel syndrome"], "손목굴증후군", []),
+        ("DJD", ["degenerative joint disease"], "퇴행관절질환", []),
+        ("DTR", ["deep tendon reflex"], "심부건반사", []),
+        ("EMG", ["electromyography"], "근전도", []),
+        ("ESR", ["erythrocyte sedimentation rate"], "적혈구침강률", []),
+        ("Fx.", ["fracture"], "골절", []),
+        ("HIVD", ["herniated intervertebral disc"], "탈출추간판", []),
+        ("HLD", ["herniated lumbar disk"], "탈출요추간판", []),
+        ("HNP", ["herniated nucleus pulposus"], "탈출수핵", []),
+        ("ICS", ["intercostal space"], "갈비사이공간", []),
+        ("KJ", ["knee jerk"], "무릎반사", []),
+        ("L1, L2", ["lumbar vertebra"], "제1·제2 허리뼈", ["요추"]),
+        ("LBP", ["low back pain"], "허리통증", []),
+        ("NSAIDs", ["nonsteroidal antiinflammatory drugs"], "비스테로이드소염제", []),
+        ("NCV", ["nerve conduction velocity"], "신경전도속도", []),
+        ("O/R c̄ IF", ["open reduction with internal fixation"],
+         "내부고정을 동반한 관혈적정복", []),
+        ("OS", ["orthopedic surgery", "orthopedics"], "정형외과", []),
+        ("RA", ["rheumatoid arthritis"], "류마티스관절염", []),
+        ("RF", ["rheumatoid factor"], "류마티스인자", []),
+        ("ROM", ["range of motion"], "운동범위", []),
+        ("SLR", ["straight leg raising test"], "펴다리올림검사", []),
+        ("T1, T2", ["thoracic vertebra"], "제1·제2 등뼈", ["흉추"]),
+        ("THRA", ["total hip replacement arthroplasty"], "전체엉덩관절치환", []),
+        ("TKRA", ["total knee replacement arthroplasty"], "전체무릎관절치환", []),
+        ("WBBS", ["whole body bone scan"], "전신골스캔", []),
+    ],
+}
 
 
 def is_hangul(ch: str) -> bool:
@@ -423,6 +565,23 @@ def main() -> int:
             continue
         bullets = gather_bullets(pdf_path)
         words, review = build_words(bullets, src["prefix"])
+
+        # Merge transcribed abbreviation entries (image-only PDF pages).
+        extras = EXTRA_ABBREVIATIONS.get(src["subjectId"], [])
+        n_extra = 0
+        for k, (abbr, full_ens, ko, alt_kos) in enumerate(extras):
+            words.append(
+                Word(
+                    id=f"{src['prefix']}-{len(words) + 1:04d}",
+                    en=abbr,
+                    ko=ko,
+                    alt_en=list(full_ens),
+                    alt_ko=list(alt_kos),
+                    note="약어",
+                )
+            )
+            n_extra += 1
+
         out_path: Path = src["out"]
         out_path.parent.mkdir(parents=True, exist_ok=True)
         payload = {
@@ -441,10 +600,11 @@ def main() -> int:
                 json.dumps(review, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
-        summary.append((src["subjectName"], len(words), len(review), out_path))
+        summary.append((src["subjectName"], len(words), n_extra, len(review), out_path))
 
-    for name, nwords, nreview, path in summary:
-        print(f"{name}: {nwords} words → {path.name} (review: {nreview})")
+    for name, nwords, nextra, nreview, path in summary:
+        extra_note = f", 약어 {nextra}개 포함" if nextra else ""
+        print(f"{name}: {nwords} words → {path.name} (review: {nreview}{extra_note})")
     return 0
 
 

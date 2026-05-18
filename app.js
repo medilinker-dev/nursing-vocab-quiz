@@ -3,7 +3,11 @@
   "use strict";
 
   // ---------- Constants ----------
-  const SUBJECT_FILES = ["data/subject1.json", "data/subject2.json"];
+  const SUBJECT_FILES = [
+    "data/subject1.json",
+    "data/subject2.json",
+    "data/subject3.json",
+  ];
   const COUNT_OPTIONS = [5, 10, 15, 20, 25, 30, 35, 40];
   const DEFAULT_COUNT = 40;
   const MAX_TYPEA_ATTEMPTS = 3; // 1=오답, 2=힌트, 3=정답 공개

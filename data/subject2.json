@@ -1,7 +1,7 @@
 {
   "subjectId": "subject2",
   "subjectName": "신경계통",
-  "version": "2026-05-10",
+  "version": "2026-05-18",
   "words": [
     {
       "id": "s2-0001",
@@ -1125,6 +1125,311 @@
       "alt_en": [
         "NRS"
       ]
+    },
+    {
+      "id": "s2-0168",
+      "en": "AD",
+      "ko": "알츠하이머병",
+      "alt_en": [
+        "Alzheimer disease",
+        "dementia"
+      ],
+      "alt_ko": [
+        "치매"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0169",
+      "en": "AIDP",
+      "ko": "급성염증탈수초다발성신경병증",
+      "alt_en": [
+        "acute inflammatory demyelinating polyneuropathy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0170",
+      "en": "ALS",
+      "ko": "근위축측삭경화증",
+      "alt_en": [
+        "amyotrophic lateral sclerosis",
+        "acute lateral sclerosis"
+      ],
+      "alt_ko": [
+        "급성측삭경화증"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0171",
+      "en": "ANS",
+      "ko": "자율신경계",
+      "alt_en": [
+        "autonomic nervous system"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0172",
+      "en": "CNS",
+      "ko": "중추신경계",
+      "alt_en": [
+        "central nervous system"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0173",
+      "en": "CP",
+      "ko": "뇌성마비",
+      "alt_en": [
+        "cerebral palsy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0174",
+      "en": "CSF",
+      "ko": "뇌척수액",
+      "alt_en": [
+        "cerebrospinal fluid"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0175",
+      "en": "CVA",
+      "ko": "뇌졸중",
+      "alt_en": [
+        "cerebrovascular accident"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0176",
+      "en": "CVD",
+      "ko": "뇌혈관질환",
+      "alt_en": [
+        "cerebrovascular disease"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0177",
+      "en": "DBS",
+      "ko": "깊은뇌자극",
+      "alt_en": [
+        "deep brain stimulation"
+      ],
+      "alt_ko": [
+        "심부뇌자극"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0178",
+      "en": "DTR",
+      "ko": "심부건반사",
+      "alt_en": [
+        "deep tendon reflex"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0179",
+      "en": "EDH",
+      "ko": "경막외혈종",
+      "alt_en": [
+        "epidural hematoma"
+      ],
+      "alt_ko": [
+        "경막바깥혈종"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0180",
+      "en": "EEG",
+      "ko": "뇌파검사",
+      "alt_en": [
+        "electroencephalography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0181",
+      "en": "EST",
+      "ko": "전기경련요법",
+      "alt_en": [
+        "electroconvulsive therapy"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0182",
+      "en": "GCS",
+      "ko": "글래스고혼수척도",
+      "alt_en": [
+        "Glasgow Coma Scale"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0183",
+      "en": "HIVD",
+      "ko": "탈출추간판",
+      "alt_en": [
+        "herniated intervertebral disk"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0184",
+      "en": "HNP",
+      "ko": "탈출수핵원반",
+      "alt_en": [
+        "herniated nucleus pulposus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0185",
+      "en": "ICP",
+      "ko": "두개내압",
+      "alt_en": [
+        "intracranial pressure"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0186",
+      "en": "KJ",
+      "ko": "무릎반사",
+      "alt_en": [
+        "knee jerk"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0187",
+      "en": "LP",
+      "ko": "요추천자",
+      "alt_en": [
+        "lumbar puncture"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0188",
+      "en": "MRI",
+      "ko": "자기공명영상",
+      "alt_en": [
+        "magnetic resonance imaging"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0189",
+      "en": "MS",
+      "ko": "다발성경화증",
+      "alt_en": [
+        "multiple sclerosis"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0190",
+      "en": "NCV",
+      "ko": "신경전도속도",
+      "alt_en": [
+        "nerve conduction velocity"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0191",
+      "en": "NICU",
+      "ko": "신경외과집중치료실",
+      "alt_en": [
+        "neurosurgical intensive care unit"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0192",
+      "en": "NRS",
+      "ko": "수치통증척도",
+      "alt_en": [
+        "numeric rating scale"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0193",
+      "en": "OBS",
+      "ko": "기질성뇌증후군",
+      "alt_en": [
+        "organic brain syndrome"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0194",
+      "en": "PNS",
+      "ko": "말초신경계",
+      "alt_en": [
+        "peripheral nervous system"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0195",
+      "en": "PEG",
+      "ko": "공기뇌조영",
+      "alt_en": [
+        "pneumoencephalography"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0196",
+      "en": "SDH",
+      "ko": "거미막밑출혈",
+      "alt_en": [
+        "subarachnoid hemorrhage"
+      ],
+      "alt_ko": [
+        "지주막하출혈"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0197",
+      "en": "TIA",
+      "ko": "일과성허혈발작",
+      "alt_en": [
+        "transient ischemic attack"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0198",
+      "en": "VAS",
+      "ko": "시각통증등급",
+      "alt_en": [
+        "visual analogue scale"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s2-0199",
+      "en": "VP shunt",
+      "ko": "뇌실복막강션트",
+      "alt_en": [
+        "ventriculoperitoneal shunt"
+      ],
+      "note": "약어"
     }
   ]
 }

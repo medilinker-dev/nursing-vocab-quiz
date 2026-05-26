@@ -1,0 +1,1083 @@
+{
+  "subjectId": "subject4",
+  "subjectName": "피부와 유방",
+  "version": "2026-05-26",
+  "words": [
+    {
+      "id": "s4-0001",
+      "en": "epidermis",
+      "ko": "표피"
+    },
+    {
+      "id": "s4-0002",
+      "en": "stratum corneum",
+      "ko": "각질층"
+    },
+    {
+      "id": "s4-0003",
+      "en": "stratum lucidum",
+      "ko": "투명층"
+    },
+    {
+      "id": "s4-0004",
+      "en": "stratum granulosum",
+      "ko": "과립층"
+    },
+    {
+      "id": "s4-0005",
+      "en": "stratum spinosum",
+      "ko": "가시층"
+    },
+    {
+      "id": "s4-0006",
+      "en": "stratum basale",
+      "ko": "기저층"
+    },
+    {
+      "id": "s4-0007",
+      "en": "dermis",
+      "ko": "진피",
+      "alt_en": [
+        "corium"
+      ]
+    },
+    {
+      "id": "s4-0008",
+      "en": "papillary layer",
+      "ko": "유두층"
+    },
+    {
+      "id": "s4-0009",
+      "en": "reticular layer",
+      "ko": "그물층"
+    },
+    {
+      "id": "s4-0010",
+      "en": "subcutaneous tissue",
+      "ko": "피부밑조직",
+      "alt_ko": [
+        "피하조직"
+      ]
+    },
+    {
+      "id": "s4-0011",
+      "en": "hypodermis",
+      "ko": "피부밑지방조직",
+      "alt_en": [
+        "superficial fascia"
+      ],
+      "alt_ko": [
+        "얕은근막"
+      ]
+    },
+    {
+      "id": "s4-0012",
+      "en": "adipose tissue",
+      "ko": "지방조직"
+    },
+    {
+      "id": "s4-0013",
+      "en": "hair shaft",
+      "ko": "털줄기"
+    },
+    {
+      "id": "s4-0014",
+      "en": "hair root",
+      "ko": "털뿌리"
+    },
+    {
+      "id": "s4-0015",
+      "en": "hair follicle",
+      "ko": "털주머니",
+      "alt_ko": [
+        "모낭"
+      ]
+    },
+    {
+      "id": "s4-0016",
+      "en": "arrector pili muscle",
+      "ko": "털세움근"
+    },
+    {
+      "id": "s4-0017",
+      "en": "root hair plexus",
+      "ko": "털뿌리신경얼기"
+    },
+    {
+      "id": "s4-0018",
+      "en": "sebaceous gland",
+      "ko": "피지샘"
+    },
+    {
+      "id": "s4-0019",
+      "en": "eccrine sweat gland",
+      "ko": "에크린땀샘"
+    },
+    {
+      "id": "s4-0020",
+      "en": "sweat pore",
+      "ko": "땀구멍"
+    },
+    {
+      "id": "s4-0021",
+      "en": "dermal papilla",
+      "ko": "진피유두"
+    },
+    {
+      "id": "s4-0022",
+      "en": "free nerve ending",
+      "ko": "자유신경종말"
+    },
+    {
+      "id": "s4-0023",
+      "en": "sensory nerve fiber",
+      "ko": "감각신경섬유"
+    },
+    {
+      "id": "s4-0024",
+      "en": "Meissner corpuscle",
+      "ko": "마이스너소체"
+    },
+    {
+      "id": "s4-0025",
+      "en": "Pacini corpuscle",
+      "ko": "파치니소체"
+    },
+    {
+      "id": "s4-0026",
+      "en": "alopecia",
+      "ko": "탈모",
+      "alt_en": [
+        "baldness"
+      ]
+    },
+    {
+      "id": "s4-0027",
+      "en": "anhidrosis",
+      "ko": "땀없음증"
+    },
+    {
+      "id": "s4-0028",
+      "en": "hyperhidrosis",
+      "ko": "땀과다증",
+      "alt_en": [
+        "polyhidrosis"
+      ],
+      "alt_ko": [
+        "다한증"
+      ]
+    },
+    {
+      "id": "s4-0029",
+      "en": "osmidrosis",
+      "ko": "액취증",
+      "alt_en": [
+        "bromihidrosis",
+        "bromidrosis"
+      ],
+      "alt_ko": [
+        "땀악취증",
+        "취한증"
+      ]
+    },
+    {
+      "id": "s4-0030",
+      "en": "chloasma",
+      "ko": "기미",
+      "alt_en": [
+        "melasma"
+      ]
+    },
+    {
+      "id": "s4-0031",
+      "en": "cicatrix",
+      "ko": "흉터",
+      "alt_en": [
+        "scar"
+      ]
+    },
+    {
+      "id": "s4-0032",
+      "en": "bruise",
+      "ko": "멍",
+      "alt_ko": [
+        "타박상"
+      ]
+    },
+    {
+      "id": "s4-0033",
+      "en": "urticaria",
+      "ko": "두드러기",
+      "alt_en": [
+        "hives"
+      ]
+    },
+    {
+      "id": "s4-0034",
+      "en": "petechia",
+      "ko": "출혈점"
+    },
+    {
+      "id": "s4-0035",
+      "en": "purpura",
+      "ko": "자반",
+      "alt_ko": [
+        "자색반",
+        "자반병"
+      ]
+    },
+    {
+      "id": "s4-0036",
+      "en": "thrombocytopenic purpura",
+      "ko": "혈소판감소자반"
+    },
+    {
+      "id": "s4-0037",
+      "en": "ecchymosis",
+      "ko": "반(상)출혈"
+    },
+    {
+      "id": "s4-0038",
+      "en": "hyperkeratosis",
+      "ko": "과다각화증"
+    },
+    {
+      "id": "s4-0039",
+      "en": "macule",
+      "ko": "반(점)"
+    },
+    {
+      "id": "s4-0040",
+      "en": "melanoderma",
+      "ko": "멜라닌피부증"
+    },
+    {
+      "id": "s4-0041",
+      "en": "melanosis",
+      "ko": "흑색증"
+    },
+    {
+      "id": "s4-0042",
+      "en": "erythema",
+      "ko": "홍반"
+    },
+    {
+      "id": "s4-0043",
+      "en": "eruption",
+      "ko": "발진"
+    },
+    {
+      "id": "s4-0044",
+      "en": "papule",
+      "ko": "구진"
+    },
+    {
+      "id": "s4-0045",
+      "en": "pustule",
+      "ko": "고름물집",
+      "alt_ko": [
+        "농포"
+      ]
+    },
+    {
+      "id": "s4-0046",
+      "en": "scales",
+      "ko": "비늘"
+    },
+    {
+      "id": "s4-0047",
+      "en": "vesicle",
+      "ko": "잔물집",
+      "alt_ko": [
+        "소수포"
+      ]
+    },
+    {
+      "id": "s4-0048",
+      "en": "bleb",
+      "ko": "물집",
+      "alt_en": [
+        "blister",
+        "bulla"
+      ],
+      "alt_ko": [
+        "수포"
+      ]
+    },
+    {
+      "id": "s4-0049",
+      "en": "cyst",
+      "ko": "낭"
+    },
+    {
+      "id": "s4-0050",
+      "en": "fissure",
+      "ko": "열",
+      "alt_ko": [
+        "균열된 틈"
+      ]
+    },
+    {
+      "id": "s4-0051",
+      "en": "polyp",
+      "ko": "용종",
+      "alt_ko": [
+        "성장물"
+      ]
+    },
+    {
+      "id": "s4-0052",
+      "en": "ulcer",
+      "ko": "궤양"
+    },
+    {
+      "id": "s4-0053",
+      "en": "wheal",
+      "ko": "팽진",
+      "alt_ko": [
+        "두드러기"
+      ]
+    },
+    {
+      "id": "s4-0054",
+      "en": "acne",
+      "ko": "여드름",
+      "alt_en": [
+        "pimple"
+      ],
+      "alt_ko": [
+        "좌창"
+      ]
+    },
+    {
+      "id": "s4-0055",
+      "en": "callus",
+      "ko": "굳은살"
+    },
+    {
+      "id": "s4-0056",
+      "en": "cone",
+      "ko": "티눈",
+      "alt_en": [
+        "corn"
+      ]
+    },
+    {
+      "id": "s4-0057",
+      "en": "albinism",
+      "ko": "백색증"
+    },
+    {
+      "id": "s4-0058",
+      "en": "leukoderma",
+      "ko": "백색피부증",
+      "alt_en": [
+        "vitiligo"
+      ],
+      "alt_ko": [
+        "백반증"
+      ]
+    },
+    {
+      "id": "s4-0059",
+      "en": "burn",
+      "ko": "화상"
+    },
+    {
+      "id": "s4-0060",
+      "en": "decubitus ulcer",
+      "ko": "욕창",
+      "alt_en": [
+        "bedsore",
+        "pressure sore"
+      ],
+      "alt_ko": [
+        "압박궤양"
+      ]
+    },
+    {
+      "id": "s4-0061",
+      "en": "dermatitis",
+      "ko": "피부염"
+    },
+    {
+      "id": "s4-0062",
+      "en": "eczema",
+      "ko": "습진"
+    },
+    {
+      "id": "s4-0063",
+      "en": "paronychia",
+      "ko": "손발톱주위염"
+    },
+    {
+      "id": "s4-0064",
+      "en": "psoriasis",
+      "ko": "건선",
+      "alt_ko": [
+        "마른비늘증"
+      ]
+    },
+    {
+      "id": "s4-0065",
+      "en": "furuncle",
+      "ko": "종기",
+      "alt_en": [
+        "boil"
+      ]
+    },
+    {
+      "id": "s4-0066",
+      "en": "carbuncle",
+      "ko": "큰종기"
+    },
+    {
+      "id": "s4-0067",
+      "en": "herpes simplex",
+      "ko": "단순포진"
+    },
+    {
+      "id": "s4-0068",
+      "en": "herpes zoster",
+      "ko": "대상포진"
+    },
+    {
+      "id": "s4-0069",
+      "en": "postherpetic neuralgia",
+      "ko": "대상포진후 신경통"
+    },
+    {
+      "id": "s4-0070",
+      "en": "impetigo contagiosa",
+      "ko": "접촉전염고름딱지증",
+      "alt_ko": [
+        "접촉전염농가진"
+      ]
+    },
+    {
+      "id": "s4-0071",
+      "en": "systemic lupus erythematosus",
+      "ko": "전신홍반루푸스",
+      "alt_en": [
+        "SLE"
+      ]
+    },
+    {
+      "id": "s4-0072",
+      "en": "scleroderma",
+      "ko": "피부경화증",
+      "alt_en": [
+        "dermatosclerosis"
+      ]
+    },
+    {
+      "id": "s4-0073",
+      "en": "Hansen's disease",
+      "ko": "한센병",
+      "alt_en": [
+        "leprosy"
+      ],
+      "alt_ko": [
+        "나병"
+      ]
+    },
+    {
+      "id": "s4-0074",
+      "en": "scabies",
+      "ko": "옴"
+    },
+    {
+      "id": "s4-0075",
+      "en": "tinea",
+      "ko": "백선증",
+      "alt_en": [
+        "ringworm"
+      ]
+    },
+    {
+      "id": "s4-0076",
+      "en": "erysipelas",
+      "ko": "단독",
+      "alt_ko": [
+        "얕은 연조직염"
+      ]
+    },
+    {
+      "id": "s4-0077",
+      "en": "cellulitis",
+      "ko": "연조직염"
+    },
+    {
+      "id": "s4-0078",
+      "en": "keloid",
+      "ko": "흉터종",
+      "alt_ko": [
+        "켈로이드"
+      ]
+    },
+    {
+      "id": "s4-0079",
+      "en": "variola",
+      "ko": "두창",
+      "alt_en": [
+        "smallpox"
+      ],
+      "alt_ko": [
+        "마마"
+      ]
+    },
+    {
+      "id": "s4-0080",
+      "en": "rubella",
+      "ko": "풍진",
+      "alt_en": [
+        "German measles"
+      ]
+    },
+    {
+      "id": "s4-0081",
+      "en": "measles",
+      "ko": "홍역",
+      "alt_en": [
+        "rubeola"
+      ]
+    },
+    {
+      "id": "s4-0082",
+      "en": "varicella",
+      "ko": "수두",
+      "alt_en": [
+        "chickenpox"
+      ]
+    },
+    {
+      "id": "s4-0083",
+      "en": "verruca",
+      "ko": "사마귀",
+      "alt_en": [
+        "wart"
+      ]
+    },
+    {
+      "id": "s4-0084",
+      "en": "basal cell carcinoma",
+      "ko": "바닥세포암종",
+      "alt_ko": [
+        "기저세포암종"
+      ]
+    },
+    {
+      "id": "s4-0085",
+      "en": "squamous cell carcinoma",
+      "ko": "편평세포암종",
+      "alt_en": [
+        "SCC"
+      ]
+    },
+    {
+      "id": "s4-0086",
+      "en": "malignant melanoma",
+      "ko": "악성 흑색종"
+    },
+    {
+      "id": "s4-0087",
+      "en": "dermabrasion",
+      "ko": "박피"
+    },
+    {
+      "id": "s4-0088",
+      "en": "debridement",
+      "ko": "죽은조직제거",
+      "alt_en": [
+        "necrectomy"
+      ],
+      "alt_ko": [
+        "데브리망"
+      ]
+    },
+    {
+      "id": "s4-0089",
+      "en": "cryosurgery",
+      "ko": "냉동수술"
+    },
+    {
+      "id": "s4-0090",
+      "en": "electrodesiccation",
+      "ko": "전기건조"
+    },
+    {
+      "id": "s4-0091",
+      "en": "fulguration",
+      "ko": "방전요법",
+      "alt_ko": [
+        "고주파 방전요법"
+      ]
+    },
+    {
+      "id": "s4-0092",
+      "en": "escharotomy",
+      "ko": "가피절개",
+      "alt_ko": [
+        "괴사딱지절개"
+      ]
+    },
+    {
+      "id": "s4-0093",
+      "en": "escharectomy",
+      "ko": "가피절제",
+      "alt_ko": [
+        "괴사딱지절제"
+      ]
+    },
+    {
+      "id": "s4-0094",
+      "en": "skin graft",
+      "ko": "피부이식"
+    },
+    {
+      "id": "s4-0095",
+      "en": "patch test",
+      "ko": "피부접촉검사",
+      "alt_ko": [
+        "첩포검사"
+      ]
+    },
+    {
+      "id": "s4-0096",
+      "en": "scratch test",
+      "ko": "긁은자국검사"
+    },
+    {
+      "id": "s4-0097",
+      "en": "skin prick test",
+      "ko": "피부바늘따끔검사",
+      "alt_en": [
+        "SPT"
+      ]
+    },
+    {
+      "id": "s4-0098",
+      "en": "MAST",
+      "ko": "다중 알레르기항원 검사",
+      "alt_en": [
+        "multiple allergen simultaneous test"
+      ],
+      "alt_ko": [
+        "형광효소면역측정법"
+      ]
+    },
+    {
+      "id": "s4-0099",
+      "en": "ImmunoCAP",
+      "ko": "이뮤노캡",
+      "alt_ko": [
+        "알레르기검사",
+        "형광효소화학발광법"
+      ]
+    },
+    {
+      "id": "s4-0100",
+      "en": "Mantoux test",
+      "ko": "망투검사",
+      "alt_en": [
+        "tuberculin test",
+        "PPD test"
+      ],
+      "alt_ko": [
+        "투베르쿨린검사",
+        "결핵진단 검사"
+      ]
+    },
+    {
+      "id": "s4-0101",
+      "en": "Schick test",
+      "ko": "시크 검사",
+      "alt_en": [
+        "Shick test"
+      ],
+      "alt_ko": [
+        "디프테리아 검사"
+      ]
+    },
+    {
+      "id": "s4-0102",
+      "en": "breast",
+      "ko": "유방"
+    },
+    {
+      "id": "s4-0103",
+      "en": "mammary gland",
+      "ko": "유선",
+      "alt_ko": [
+        "젖샘"
+      ]
+    },
+    {
+      "id": "s4-0104",
+      "en": "areola",
+      "ko": "젖꽃판",
+      "alt_ko": [
+        "유륜"
+      ]
+    },
+    {
+      "id": "s4-0105",
+      "en": "nipple",
+      "ko": "유두",
+      "alt_en": [
+        "mammilla",
+        "mammary papilla"
+      ],
+      "alt_ko": [
+        "젖꼭지"
+      ]
+    },
+    {
+      "id": "s4-0106",
+      "en": "lactiferous duct",
+      "ko": "젖샘관",
+      "alt_en": [
+        "mammary duct"
+      ],
+      "alt_ko": [
+        "유관"
+      ]
+    },
+    {
+      "id": "s4-0107",
+      "en": "lactiferous sinus",
+      "ko": "젖샘관 팽대"
+    },
+    {
+      "id": "s4-0108",
+      "en": "mammary lobe",
+      "ko": "젖샘엽"
+    },
+    {
+      "id": "s4-0109",
+      "en": "lobule",
+      "ko": "젖샘소엽"
+    },
+    {
+      "id": "s4-0110",
+      "en": "pectoralis major",
+      "ko": "큰가슴근"
+    },
+    {
+      "id": "s4-0111",
+      "en": "pectoralis minor",
+      "ko": "작은가슴근"
+    },
+    {
+      "id": "s4-0112",
+      "en": "intercostal muscle",
+      "ko": "갈비사이근"
+    },
+    {
+      "id": "s4-0113",
+      "en": "deep fascia",
+      "ko": "깊은근막"
+    },
+    {
+      "id": "s4-0114",
+      "en": "mastalgia",
+      "ko": "유방통"
+    },
+    {
+      "id": "s4-0115",
+      "en": "mastorrhagia",
+      "ko": "유방출혈"
+    },
+    {
+      "id": "s4-0116",
+      "en": "gynecomastia",
+      "ko": "여성형유방(증)"
+    },
+    {
+      "id": "s4-0117",
+      "en": "amastia",
+      "ko": "무유방증"
+    },
+    {
+      "id": "s4-0118",
+      "en": "athelia",
+      "ko": "무유두증"
+    },
+    {
+      "id": "s4-0119",
+      "en": "fissure of nipple",
+      "ko": "균열유두"
+    },
+    {
+      "id": "s4-0120",
+      "en": "mammary abscess",
+      "ko": "유방고름집",
+      "alt_en": [
+        "abscess of breast"
+      ],
+      "alt_ko": [
+        "유방농양"
+      ]
+    },
+    {
+      "id": "s4-0121",
+      "en": "thelitis",
+      "ko": "유두염"
+    },
+    {
+      "id": "s4-0122",
+      "en": "fibrocystic disease of the breast",
+      "ko": "유방의 섬유낭병"
+    },
+    {
+      "id": "s4-0123",
+      "en": "breast cancer",
+      "ko": "유방암"
+    },
+    {
+      "id": "s4-0124",
+      "en": "Paget disease of breast",
+      "ko": "유방의 패짓병"
+    },
+    {
+      "id": "s4-0125",
+      "en": "mammoplasty",
+      "ko": "유방성형"
+    },
+    {
+      "id": "s4-0126",
+      "en": "mastopexy",
+      "ko": "유방고정"
+    },
+    {
+      "id": "s4-0127",
+      "en": "mammography",
+      "ko": "유방(방사선)촬영"
+    },
+    {
+      "id": "s4-0128",
+      "en": "sentinel lymph node biopsy",
+      "ko": "감시림프절생검",
+      "alt_ko": [
+        "전초림프절생검"
+      ]
+    },
+    {
+      "id": "s4-0129",
+      "en": "lumpectomy of breast",
+      "ko": "유방덩이절제"
+    },
+    {
+      "id": "s4-0130",
+      "en": "mastectomy",
+      "ko": "유방절제"
+    },
+    {
+      "id": "s4-0131",
+      "en": "BRCA",
+      "ko": "유방암 유전인자",
+      "alt_en": [
+        "breast related cancer antigen"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0132",
+      "en": "DCIS",
+      "ko": "제자리관암종",
+      "alt_en": [
+        "ductal carcinoma in situ"
+      ],
+      "alt_ko": [
+        "비침윤성 제자리관암종"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0133",
+      "en": "Derm",
+      "ko": "피부과",
+      "alt_en": [
+        "dermatology"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0134",
+      "en": "ER",
+      "ko": "에스트로젠수용체",
+      "alt_en": [
+        "estrogen receptor"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0135",
+      "en": "FNA",
+      "ko": "가는바늘흡인",
+      "alt_en": [
+        "fine needle aspiration",
+        "fine needle aspiration cytology"
+      ],
+      "alt_ko": [
+        "가는바늘흡인세포검사"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0136",
+      "en": "FTSG",
+      "ko": "전층피부이식",
+      "alt_en": [
+        "full thickness skin graft",
+        "Wolfe graft"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0137",
+      "en": "HER2",
+      "ko": "사람상피세포증식인자수용체2형",
+      "alt_en": [
+        "human epidermal growth factor receptor 2"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0138",
+      "en": "HPV",
+      "ko": "인유두종 바이러스",
+      "alt_en": [
+        "human papilloma virus"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0139",
+      "en": "LIQ",
+      "ko": "유방 하내 사분",
+      "alt_en": [
+        "lower inner quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0140",
+      "en": "LOQ",
+      "ko": "유방 하외 사분",
+      "alt_en": [
+        "lower outer quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0141",
+      "en": "MMR",
+      "ko": "볼거리, 홍역, 풍진",
+      "alt_en": [
+        "mumps, measles, rubella"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0142",
+      "en": "PCNA",
+      "ko": "피부경유바늘흡인",
+      "alt_en": [
+        "percutaneous needle aspiration",
+        "percutaneous needle aspiration cytology"
+      ],
+      "alt_ko": [
+        "피부경유바늘흡인세포검사"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0143",
+      "en": "PR",
+      "ko": "황체호르몬수용체",
+      "alt_en": [
+        "progesterone receptor"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0144",
+      "en": "SC",
+      "ko": "피하의",
+      "alt_en": [
+        "SQ",
+        "subcutaneous"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0145",
+      "en": "SLE",
+      "ko": "전신홍반루푸스",
+      "alt_en": [
+        "systemic lupus erythematous"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0146",
+      "en": "STSG",
+      "ko": "부분층피부이식",
+      "alt_en": [
+        "split thickness skin graft"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0147",
+      "en": "TRAM",
+      "ko": "피부밑통과가로배곧은근피판",
+      "alt_en": [
+        "transverse rectus abdominis myocutaneous",
+        "breast reconstruction using the transverse rectus abdominis myocutaneous"
+      ],
+      "alt_ko": [
+        "횡복직근피판",
+        "유방복원"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0148",
+      "en": "UIQ",
+      "ko": "유방 상내 사분",
+      "alt_en": [
+        "upper inner quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0149",
+      "en": "UOQ",
+      "ko": "유방 상외 사분",
+      "alt_en": [
+        "upper outer quadrant"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0150",
+      "en": "UNG",
+      "ko": "연고",
+      "alt_en": [
+        "ointment"
+      ],
+      "note": "약어"
+    },
+    {
+      "id": "s4-0151",
+      "en": "VZV",
+      "ko": "수두대상포진 바이러스",
+      "alt_en": [
+        "varicella zoster virus"
+      ],
+      "note": "약어"
+    }
+  ]
+}
